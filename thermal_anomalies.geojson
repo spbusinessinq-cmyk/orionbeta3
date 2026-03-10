@@ -1,0 +1,221 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ra-ukraine-001",
+        "name": "Ukraine Airspace Closure",
+        "kind": "restricted_airspace",
+        "region": "Eastern Europe",
+        "severity": 5,
+        "note": "Complete airspace closure since Feb 24 2022. All civil aviation prohibited. EASA CZIB 2022-02 R2. Active combat air operations across full territory.",
+        "source": "EASA CZIB 2022-02 / Safe Airspace",
+        "source_url": "https://safeairspace.net/ukraine",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[22.2, 44.4], [24.5, 44.2], [28.5, 45.3], [33.5, 46.2], [36.5, 46.5], [38.5, 47.0], [40.2, 48.0], [40.2, 50.5], [39.0, 51.2], [37.5, 51.5], [34.0, 52.0], [30.5, 51.8], [28.0, 51.5], [25.5, 51.2], [22.0, 50.0], [22.1, 47.5], [22.2, 45.5], [22.2, 44.4]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ra-russia-west-001",
+        "name": "Western Russia Airspace Advisory",
+        "kind": "restricted_airspace",
+        "region": "Eastern Europe",
+        "severity": 5,
+        "note": "EASA CZIB 2025-01-R2: Do not operate within Russian Federation airspace west of 60°E. Drone and missile overflight incidents. Airspace weaponized. Belgorod/Kursk oblasts under active Ukrainian strikes.",
+        "source": "EASA CZIB 2025-01-R2",
+        "source_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/2025-01-r2",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[30.0, 44.8], [36.0, 44.5], [42.0, 45.2], [50.0, 47.0], [55.0, 50.0], [60.0, 55.0], [60.0, 65.0], [55.0, 68.0], [45.0, 69.5], [35.0, 68.5], [30.0, 65.0], [28.0, 58.0], [28.0, 52.0], [30.0, 48.0], [30.0, 44.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ra-mideast-001",
+        "name": "Middle East Airspace Advisory Zone",
+        "kind": "restricted_airspace",
+        "region": "Middle East",
+        "severity": 5,
+        "note": "EASA CZIB 2025-02-R2: Elevated risk for Iran, Iraq, Israel, Jordan, Lebanon. Ballistic missile and drone attacks cross this airspace. Airlines diverting. Route RNAV closures active.",
+        "source": "EASA CZIB 2025-02-R2",
+        "source_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/2025-02-r2",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[33.5, 29.5], [36.0, 29.2], [39.0, 29.5], [44.0, 30.0], [48.0, 31.0], [52.0, 32.0], [56.0, 32.5], [60.0, 33.0], [62.0, 35.0], [61.0, 37.0], [58.0, 38.0], [54.0, 37.5], [50.0, 37.0], [46.0, 36.5], [42.0, 36.0], [38.0, 35.5], [35.5, 35.0], [34.0, 33.5], [33.2, 31.5], [33.5, 29.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ra-syria-001",
+        "name": "Syria Airspace Closure",
+        "kind": "restricted_airspace",
+        "region": "Middle East",
+        "severity": 5,
+        "note": "Complete civil aviation closure. Multi-state military operations ongoing. Israeli airstrikes on weapons depots. Turkish operations in north. Air defenses uncertain post-transition.",
+        "source": "FAA / Safe Airspace",
+        "source_url": "https://safeairspace.net/syria",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[36.0, 32.5], [38.0, 32.4], [40.5, 33.2], [42.2, 34.5], [42.4, 35.8], [41.8, 37.2], [40.5, 37.5], [38.5, 37.3], [36.8, 37.0], [35.8, 36.2], [35.6, 35.0], [35.6, 33.5], [36.0, 32.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ra-yemen-001",
+        "name": "Yemen Airspace Closure",
+        "kind": "restricted_airspace",
+        "region": "Middle East",
+        "severity": 5,
+        "note": "Complete closure. Houthi LACM/UAV activity. US/UK coalition airstrikes on Houthi positions. Sana'a International Airport closed for civil aviation.",
+        "source": "FAA / Safe Airspace",
+        "source_url": "https://safeairspace.net/yemen",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[42.8, 12.5], [44.2, 12.0], [46.5, 12.2], [49.0, 12.8], [51.5, 13.8], [53.0, 15.2], [54.0, 16.8], [53.5, 18.2], [52.0, 19.0], [49.5, 19.2], [47.0, 18.8], [44.5, 18.0], [43.0, 16.5], [42.5, 14.5], [42.8, 13.2], [42.8, 12.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ra-sudan-001",
+        "name": "Sudan Airspace Warning",
+        "kind": "restricted_airspace",
+        "region": "Africa",
+        "severity": 5,
+        "note": "Civil war. Khartoum airport closed. Airspace contested. All overflight at elevated risk. NOTAM advises against civil operations. Drone and fixed-wing combat activity.",
+        "source": "EASA / Safe Airspace",
+        "source_url": "https://safeairspace.net/sudan",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[22.0, 9.0], [24.5, 8.5], [27.5, 9.2], [31.5, 10.5], [35.0, 12.0], [38.0, 14.0], [39.0, 16.5], [38.5, 19.0], [37.0, 21.0], [34.0, 22.0], [30.0, 22.2], [26.0, 21.5], [23.0, 20.0], [21.8, 17.0], [21.5, 13.5], [22.0, 10.5], [22.0, 9.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ra-taiwan-strait-001",
+        "name": "Taiwan Strait / ADIZ Monitor",
+        "kind": "restricted_airspace",
+        "region": "East Asia",
+        "severity": 4,
+        "note": "PLAAF incursions into Taiwan ADIZ now near-daily. PLA military exercise temporary restricted areas intermittently declared without notice. Airlines avoid strait at altitude.",
+        "source": "Safe Airspace / ICAO",
+        "source_url": "https://safeairspace.net/taiwan",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[117.5, 22.0], [119.2, 21.5], [121.5, 21.8], [123.0, 22.8], [124.5, 24.2], [124.5, 26.0], [123.0, 27.5], [121.0, 28.0], [119.5, 27.5], [118.0, 26.5], [117.2, 25.0], [117.0, 23.2], [117.5, 22.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ra-korean-peninsula-001",
+        "name": "Korean Peninsula Tension Zone",
+        "kind": "restricted_airspace",
+        "region": "East Asia",
+        "severity": 3,
+        "note": "North Korean ICBM/MRBM test launch areas. DMZ overflight prohibited. Balloon campaign crossing ROK border. Intermittent FAA/ICAO NOTAMs issued.",
+        "source": "FAA NOTAM / ICAO",
+        "source_url": "https://www.faa.gov/air_traffic/publications/us_restrictions",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[124.5, 34.0], [126.5, 33.5], [128.5, 34.0], [130.5, 35.2], [131.0, 37.0], [130.5, 39.5], [129.5, 41.5], [128.0, 43.0], [126.0, 43.5], [124.5, 42.5], [124.2, 40.0], [124.0, 37.5], [124.5, 35.5], [124.5, 34.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ra-afghanistan-001",
+        "name": "Afghanistan Airspace Advisory",
+        "kind": "restricted_airspace",
+        "region": "Central Asia",
+        "severity": 2,
+        "note": "Taliban ATC of limited capability. Navigation aid reliability uncertain. Kabul airport operational under Taliban but minimal international IFR support. Overflight caution advised.",
+        "source": "Safe Airspace / ICAO",
+        "source_url": "https://safeairspace.net/afghanistan",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[61.0, 29.5], [63.5, 29.0], [66.5, 29.5], [70.5, 30.5], [73.5, 32.5], [74.8, 35.0], [74.5, 37.5], [72.5, 38.5], [69.5, 38.0], [66.0, 37.0], [63.0, 35.5], [61.0, 33.5], [60.5, 31.5], [61.0, 29.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ra-libya-001",
+        "name": "Libya Airspace Warning",
+        "kind": "restricted_airspace",
+        "region": "North Africa",
+        "severity": 4,
+        "note": "Divided ATC between GNU (Tripoli) and LNA (Benghazi). Armed drone activity. MANPADS threat. EASA advises avoidance below FL350. Limited radar coverage in south.",
+        "source": "EASA / Safe Airspace",
+        "source_url": "https://safeairspace.net/libya",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[9.5, 19.5], [12.0, 19.5], [15.0, 20.5], [19.0, 22.0], [22.5, 24.0], [25.0, 27.5], [25.2, 30.5], [23.5, 32.5], [21.5, 33.0], [18.0, 33.2], [14.0, 32.5], [11.0, 31.5], [9.5, 29.5], [9.2, 25.5], [9.2, 22.5], [9.5, 19.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ra-iran-full-closure-001",
+        "name": "Iran — Full Airspace Closure (OIIX/OIIY FIR)",
+        "kind": "restricted_airspace",
+        "region": "Middle East",
+        "severity": 5,
+        "note": "Iranian FIR (Tehran ACC OIIX, Esfahan ACC OIIY) declared full closure to all civil aviation following commencement of US/Israeli military campaign Feb 28 2026. ICAO safety message issued. All civil overflights rerouted via Arabian Sea or Central Asian corridors. Active combat operations across Iranian territory. Air defense systems (S-300PMU-2, Bavar-373) on continuous engagement posture. NOTAM NOTICEs active across all flight levels.",
+        "source": "ICAO / EUROCONTROL / EASA CZIB 2026-03 / Safe Airspace",
+        "source_url": "https://safeairspace.net",
+        "updated_at": "2026-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[44.0, 25.0], [49.0, 24.0], [54.0, 25.0], [58.0, 26.0], [63.0, 27.0], [63.5, 32.0], [62.0, 38.0], [58.0, 40.0], [53.0, 40.0], [48.0, 38.0], [44.0, 37.0], [44.5, 32.0], [44.0, 28.0], [44.0, 25.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ra-israel-wartime-001",
+        "name": "Israel — Wartime Airspace Closure",
+        "kind": "restricted_airspace",
+        "region": "Middle East",
+        "severity": 5,
+        "note": "Israeli airspace closed to all civil aviation under wartime conditions. Ben Gurion International (LLBG) and Ramon Airport (LLIB) suspended commercial operations. Israeli Air Force (IAF) maintaining continuous CAP. Ballistic missile threats requiring national air defense engagement posture. NOTAM P/R/D areas active. Overflights prohibited without explicit Israeli CAA coordination. El Al and domestic carriers operating under military escort protocol only.",
+        "source": "ICAO / Israeli CAA / EASA / Safe Airspace / IAF Spokesperson",
+        "source_url": "https://safeairspace.net/israel",
+        "updated_at": "2026-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[34.2, 29.5], [35.9, 29.5], [36.0, 31.5], [35.5, 32.5], [35.1, 33.4], [34.2, 33.2], [34.2, 31.5], [34.2, 29.5]]]
+      }
+    }
+  ]
+}

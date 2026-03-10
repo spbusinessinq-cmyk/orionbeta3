@@ -1,0 +1,109 @@
+{
+  "generated_at": "2026-03-09T00:00:00Z",
+  "snapshot_type": "source-backed-current-snapshot",
+  "note": "Intel layers are source-backed current snapshots, not live feeds. See source_url fields for authoritative sources. Last verified against EASA, FAA, OFAC, UKMTO, ACLED, NetBlocks, Access Now, ISW, IISS, CSIS AMTI, NASA FIRMS, and IAEA data. Iran/Israel war context updated Mar 2026.",
+  "total_features": 109,
+  "total_datasets": 10,
+  "datasets": [
+    {
+      "dataset": "conflict_zones",
+      "file": "/intel/conflict_zones.geojson",
+      "feature_count": 13,
+      "updated_at": "2026-03-01T00:00:00Z",
+      "kind": "conflict_zone",
+      "enabled_by_default": false,
+      "status": "ready",
+      "primary_sources": ["ACLED", "ISW", "UN OCHA", "CENTCOM", "IDF Spokesperson"]
+    },
+    {
+      "dataset": "disputed_borders",
+      "file": "/intel/disputed_borders.geojson",
+      "feature_count": 12,
+      "updated_at": "2025-03-01T00:00:00Z",
+      "kind": "disputed_border",
+      "enabled_by_default": false,
+      "status": "ready",
+      "primary_sources": ["CIA World Factbook", "UN Resolutions", "MEA India", "CSIS AMTI", "ICJ"]
+    },
+    {
+      "dataset": "maritime_zones",
+      "file": "/intel/maritime_zones.geojson",
+      "feature_count": 8,
+      "updated_at": "2025-03-01T00:00:00Z",
+      "kind": "maritime_zone",
+      "enabled_by_default": false,
+      "status": "ready",
+      "primary_sources": ["UKMTO", "JMIC", "US Maritime Administration", "IMO"]
+    },
+    {
+      "dataset": "sanctions",
+      "file": "/intel/sanctions.geojson",
+      "feature_count": 9,
+      "updated_at": "2025-02-25T00:00:00Z",
+      "kind": "sanctions",
+      "enabled_by_default": false,
+      "status": "ready",
+      "primary_sources": ["OFAC", "EU Sanctions"]
+    },
+    {
+      "dataset": "restricted_airspace",
+      "file": "/intel/restricted_airspace.geojson",
+      "feature_count": 12,
+      "updated_at": "2026-03-01T00:00:00Z",
+      "kind": "restricted_airspace",
+      "enabled_by_default": false,
+      "status": "ready",
+      "primary_sources": ["EASA CZIB", "FAA", "Safe Airspace", "ICAO", "Israeli CAA"]
+    },
+    {
+      "dataset": "protest_unrest",
+      "file": "/intel/protest_unrest.geojson",
+      "feature_count": 12,
+      "updated_at": "2025-03-01T00:00:00Z",
+      "kind": "protest_unrest",
+      "enabled_by_default": false,
+      "status": "ready",
+      "primary_sources": ["ACLED", "OVD-Info", "Amnesty International", "Human Rights Watch", "NetBlocks"]
+    },
+    {
+      "dataset": "internet_shutdown",
+      "file": "/intel/internet_shutdown.geojson",
+      "feature_count": 11,
+      "updated_at": "2025-03-01T00:00:00Z",
+      "kind": "internet_shutdown",
+      "enabled_by_default": false,
+      "status": "ready",
+      "primary_sources": ["NetBlocks", "Access Now #KeepItOn", "OONI", "Freedom House"]
+    },
+    {
+      "dataset": "military_activity",
+      "file": "/intel/military_activity.geojson",
+      "feature_count": 10,
+      "updated_at": "2025-03-01T00:00:00Z",
+      "kind": "military_activity",
+      "enabled_by_default": false,
+      "status": "ready",
+      "primary_sources": ["IISS Military Balance", "US DOD", "NATO SHAPE", "CSIS AMTI", "ISW"]
+    },
+    {
+      "dataset": "strike_indicators",
+      "file": "/intel/strike_indicators.geojson",
+      "feature_count": 12,
+      "updated_at": "2026-03-01T00:00:00Z",
+      "kind": "strike_indicators",
+      "enabled_by_default": false,
+      "status": "ready",
+      "primary_sources": ["ACLED", "Airwaves", "ISW", "CENTCOM", "UN OCHA", "IDF Spokesperson"]
+    },
+    {
+      "dataset": "thermal_anomalies",
+      "file": "/intel/thermal_anomalies.geojson",
+      "feature_count": 10,
+      "updated_at": "2026-03-01T00:00:00Z",
+      "kind": "thermal_anomaly",
+      "enabled_by_default": false,
+      "status": "ready",
+      "primary_sources": ["NASA FIRMS VIIRS NRT", "Copernicus EMS", "ESA Sentinel-2 SWIR", "IAEA", "ACLED"]
+    }
+  ]
+}

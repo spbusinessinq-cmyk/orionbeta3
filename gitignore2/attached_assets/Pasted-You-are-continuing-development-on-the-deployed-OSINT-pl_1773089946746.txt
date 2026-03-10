@@ -1,0 +1,137 @@
+You are continuing development on the deployed OSINT platform RSR O.R.I.O.N.
+
+The backend pipeline is stable and must NOT be changed in this pass.
+
+Do NOT touch:
+- OSINT relevance filter
+- category classifier
+- confidence scoring
+- threat scoring
+- clustering logic
+- time filters
+- overlay rendering logic
+- deployment config
+- view mode logic (OPR / FOC / BRF) except for layout alignment if needed
+
+This pass is a focused UI fix + polish pass only.
+
+CURRENT PROBLEMS TO FIX
+
+1. Top-left filter / stats collision
+The “Showing: All Events” filter bar is visually sitting behind / colliding with the stats strip.
+This must be fixed.
+The filter bar and the stats strip need clean vertical separation and proper layering.
+
+2. Stats strip spacing still needs refinement
+The metric labels and values need cleaner spacing and hierarchy.
+The labels should not feel cramped or visually jammed under the numbers.
+
+3. The interface needs more subtle “live system” motion
+Right now the UI is strong, but some parts feel too static.
+We need restrained tactical pulse / system animations in the right places only.
+
+4. The screen should feel active and alive, but not flashy, arcade-like, or over-animated.
+
+OBJECTIVE
+
+Do one clean UI pass that:
+- fixes the top-left overlap issue
+- improves top-left stack spacing
+- adds restrained pulse / live-system motion
+- preserves the O.R.I.O.N. black-glass tactical aesthetic
+- keeps the screen readable and premium
+
+TASKS
+
+1. Fix top-left layout collision
+Refactor the top-left layout so the following stack cleanly:
+- Showing / filter bar
+- Stats strip
+- Escalation Watch
+- Active Overlays
+- High Threat Events
+
+Requirements:
+- no overlap
+- no panel sitting behind another
+- consistent spacing between modules
+- correct z-index layering
+- cleaner top offset logic
+- maintain compact tactical layout
+
+2. Improve stats strip readability
+Refine the stats module so:
+- numbers remain dominant
+- labels are fully readable
+- labels do not collide with counters or borders
+- vertical spacing is balanced
+- the strip still feels compact and tactical
+
+3. Add restrained pulse / motion system
+Add subtle motion only where it improves system feel.
+
+Good candidates:
+- O.R.I.O.N. ONLINE indicator
+- OSINT badge
+- active cluster markers
+- ingest command border or icon
+- selected / active signal feed states
+- active overlay indicator dots
+- active mode tab underline / glow
+
+Rules:
+- motion must be restrained
+- slow pulse, soft glow, or subtle scan movement only
+- no arcade bounce
+- no exaggerated neon flashing
+- no consumer-app feel
+
+4. Add one or two reusable motion utility classes if needed
+Examples:
+- slow status pulse
+- soft live glow
+- subtle scan shimmer
+But keep CSS disciplined and minimal.
+
+5. Improve OSINT badge presence
+Keep the existing badge, but make it feel slightly more alive and intentional.
+It should feel like an active system tag, not dead text.
+
+6. Improve header command strip polish
+Do not redesign it.
+Just refine it with:
+- cleaner spacing
+- stronger alignment
+- better animation discipline
+- clearer hierarchy between brand, mode tabs, system status, and ingest command
+
+7. Preserve view modes
+Operator / Focus / Briefing must remain intact.
+Any layout fix must respect the mode system.
+
+8. Preserve visual discipline
+Keep:
+- black / graphite base
+- teal / green for live system state
+- amber for caution / watch
+- red for active danger / ingest / critical only
+- white / gray for structure
+
+Avoid:
+- over-glow
+- overly bright animation
+- excessive red
+- flashy motion
+- playful UI behavior
+
+DELIVERABLE
+
+After changes:
+- restart / validate
+- summarize exactly how the top-left overlap was fixed
+- summarize what pulse / animation behaviors were added
+- confirm Operator / Focus / Briefing still work
+- confirm backend / pipeline logic was untouched
+
+The final result should feel like a live O.R.I.O.N. command environment:
+clean, aligned, active, tactical, premium, readable.

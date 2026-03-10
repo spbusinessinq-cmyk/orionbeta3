@@ -1,0 +1,178 @@
+You are continuing development on the deployed OSINT platform RSR O.R.I.O.N. The backend pipeline upgrades are already working and must remain intact:
+
+- OSINT relevance filter works
+- category classifier works
+- confidence scoring works
+- time filter works
+- zoom clustering works
+- glass HUD system works
+- event detail panel works
+- deployment is stable
+
+Do NOT undo or rewrite the pipeline. This pass is strictly a UI / command-bar / panel refinement pass to make the platform feel more tactical, premium, and “Orion.”
+
+CURRENT PROBLEMS TO FIX
+
+1. Header / command bar language feels generic.
+The top status chip currently says things like “NOMINAL” and feels vague.
+We want the top bar to feel like a real system console.
+
+2. Header hierarchy still feels weak.
+The title is fine, but the bar does not yet feel like an intelligence terminal.
+It needs stronger tactical labeling and cleaner information grouping.
+
+3. Left and right side panels still feel slightly dense and not fully disciplined.
+Spacing, typography hierarchy, and section labeling need one more pass.
+
+4. The system should feel like “O.R.I.O.N. SYSTEMS ONLINE” rather than a glass demo UI.
+
+OBJECTIVE
+
+Do a focused tactical UI refinement pass that upgrades:
+- the top header / command bar
+- status language
+- panel hierarchy
+- spacing consistency
+- terminal feel
+
+Do NOT redesign from scratch.
+Preserve the current glass style, map engine, clustering, overlays, and event system.
+
+HEADER / COMMAND BAR TASKS
+
+1. Replace vague system labels with tactical Orion language.
+
+Current labels like:
+- NOMINAL
+- UPDATED
+- FEED
+- PINS
+
+should be refactored into clearer, more tactical, more readable labels.
+
+Target style examples:
+- O.R.I.O.N. SYSTEMS ONLINE
+- LAST SYNC
+- EVENT FEED
+- ACTIVE PINS
+- OSINT STATUS
+- LIVE INGEST
+- DATASETS LINKED
+
+Do not copy all of these literally if a better grouping exists, but move the bar in this direction.
+
+2. Redesign the top status grouping so it reads like one command strip.
+It should feel like a system status rail, not random pills.
+Use:
+- consistent mono labels
+- stronger section separation
+- tighter alignment
+- cleaner glow discipline
+- less empty dead space
+
+3. Keep the RSR O.R.I.O.N. identity, but make the subtitle / system naming more tactical.
+Current subtitle:
+Operational Reconnaissance & Intelligence Oversight Network
+Keep it, but style it more like a classified system descriptor.
+Possible approach:
+- smaller mono uppercase
+- slightly dimmer
+- tighter tracking
+- stronger alignment with the brand mark
+
+4. Improve the refresh control.
+Keep the existing action, but visually make it feel like a deliberate command action, not a normal button.
+Should feel like:
+- system command
+- hard-edged tactical control
+- premium red action
+- restrained hover behavior
+
+LEFT / RIGHT PANEL REFINEMENT TASKS
+
+5. Left-side panel stack refinement.
+Refine:
+- stats panel
+- escalations panel
+- intel layers panel
+- tier legend
+
+Goals:
+- more breathing room
+- more consistent vertical rhythm
+- stronger section titles
+- clearer sublabels
+- less “same-weight everything”
+
+6. Right-side feed refinement.
+Keep layout, but improve:
+- feed header hierarchy
+- age filter row clarity
+- spacing between article rows
+- metadata line readability
+- selected row state
+
+7. Intel DB panel refinement.
+The top-right panel should feel more like a system diagnostics widget.
+Improve:
+- label clarity
+- value hierarchy
+- spacing
+- more “system module” feel
+
+EVENT DETAIL PANEL TASKS
+
+8. Keep the new hierarchy but tighten it further.
+Improve:
+- badge row spacing
+- threat score block readability
+- confidence badge visibility
+- source section readability
+- fusion / intel context scanning
+- better separation between content groups
+
+9. Replace any remaining generic card feel with a more tactical document feel.
+Not overly stylized — just more disciplined and terminal-like.
+
+TACTICAL VISUAL LANGUAGE
+
+10. Increase the “Orion” identity.
+Use these principles:
+- command console
+- premium black glass
+- thin red scan accents
+- restrained teal / amber / red status language
+- mono sublabels
+- subtle grid / terminal energy
+- clean intelligence dashboard
+Avoid:
+- arcade feel
+- excessive glow
+- overly playful chips
+- random rounded consumer-app styling
+
+11. If needed, create one or two new reusable utility classes for tactical UI consistency, but do not explode the CSS architecture.
+
+THINGS TO PRESERVE
+
+Do NOT break:
+- MapLibre rendering
+- clustering
+- time filters
+- event detail functionality
+- alert feed behavior
+- overlay toggles
+- thermal layer
+- relevance filter / classifier / confidence engine
+- deployment build
+
+DELIVERABLE
+
+After changes:
+- restart / validate
+- summarize exactly what changed
+- explain how the header language was improved
+- confirm no existing intelligence systems were broken
+
+The final result should feel less like a polished prototype and more like a serious deployed intelligence terminal:
+clean, tactical, premium, readable, unmistakably O.R.I.O.N.

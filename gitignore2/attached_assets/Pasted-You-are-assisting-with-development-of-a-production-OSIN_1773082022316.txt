@@ -1,0 +1,244 @@
+You are assisting with development of a production OSINT monitoring platform called:
+
+RSR O.R.I.O.N. — Operational Reconnaissance & Intelligence Oversight Network.
+
+This system is already deployed and working. It renders a global intelligence map with event pins and geopolitical overlays. The system must be improved WITHOUT breaking existing functionality.
+
+Current tech stack:
+Next.js
+React
+TypeScript
+MapLibre GL JS
+Tailwind CSS
+GeoJSON datasets
+RSS ingestion pipeline
+Custom threat scoring system
+Glass HUD UI system
+
+The following systems are already working and must NOT be broken:
+
+Map engine with MapLibre GL JS
+Smooth pan and zoom
+Event pins rendering
+GeoJSON overlay polygons rendering
+
+Intel overlay layers (10 datasets) that toggle correctly:
+
+Conflict Zones
+Disputed Borders
+Sanctions
+Restricted Airspace
+Maritime Zones
+Protest / Unrest
+Internet Shutdown
+Military Activity
+Strike Indicators
+Thermal Anomalies
+
+Thermal anomaly layer is already validated:
+10 GeoJSON polygon features confirmed
+Hotkey H toggles the layer
+Browser confirms dataset loading
+Uses same rendering path as strike indicators
+
+UI system is already modernized using a glass HUD style with these components:
+
+Command header bar
+Stats panel
+Escalations panel
+Intel layers panel
+Intel DB panel
+Topics panel
+Left and right side panels
+Command palette
+Spread HUD
+
+Panels use CSS classes such as:
+
+.orion-glass
+.orion-label
+.orion-mono
+.orion-accent-bar
+.orion-status-pill
+.orion-header-scanline
+
+The UI modernization is already complete. Do not redesign the UI.
+
+CURRENT PROBLEM
+
+The event ingestion pipeline incorrectly classifies irrelevant articles as geopolitical threats.
+
+Example:
+A sports article about women's soccer was assigned:
+Threat Score 18
+Critical
+Conflict Zone
+Sanctions Context
+
+This happens because the scoring system reacts to keywords instead of understanding article category.
+
+We must implement a proper intelligence pipeline before threat scoring.
+
+Implement this pipeline:
+
+RSS ARTICLE
+→ CATEGORY CLASSIFIER
+→ RELEVANCE FILTER
+→ THREAT SCORING
+→ FUSED EVENT OBJECT
+→ MAP PIN
+
+STEP 1 — ARTICLE CATEGORY CLASSIFIER
+
+Each ingested article must first be categorized using headline and summary text.
+
+Possible categories:
+
+military
+politics
+protest
+economy
+cyber
+disaster
+science
+technology
+sports
+entertainment
+general
+
+Output example:
+
+article.category = "military"
+
+STEP 2 — RELEVANCE FILTER
+
+Only geopolitically relevant categories should be allowed into the threat scoring engine.
+
+Allowed categories:
+
+military
+politics
+protest
+economy
+cyber
+disaster
+
+Filtered categories that should NOT produce map events:
+
+sports
+entertainment
+lifestyle
+culture
+general
+
+Filtered articles should not create map pins.
+
+STEP 3 — IMPROVED THREAT SCORING
+
+Threat scoring should only run on relevant events.
+
+Example scoring model:
+
+military activity +8
+conflict zone overlap +5
+restricted airspace overlap +4
+sanctions context +3
+protest activity +3
+disaster severity +2
+multiple sources +2
+
+Score tiers:
+
+0–5 informational
+6–12 watch
+13–20 breaking
+21+ critical
+
+STEP 4 — FUSED EVENT OBJECT
+
+Instead of placing raw article pins, generate a structured intelligence event object.
+
+Example structure:
+
+id
+title
+category
+location
+timestamp
+sources
+signals[]
+threatScore
+confidence
+
+Signals may include:
+
+conflict zone overlap
+restricted airspace
+sanctions context
+thermal anomaly
+protest activity
+internet shutdown
+military activity
+
+STEP 5 — CONFIDENCE SCORE
+
+Each event should include a confidence level.
+
+Rules:
+
+1 source → low confidence
+2 sources → medium confidence
+3+ sources or dataset confirmation → high confidence
+
+Display confidence in the event details panel.
+
+STEP 6 — PIN CLUSTERING
+
+Implement clustering for event pins.
+
+Requirements:
+
+cluster nearby events
+display cluster count
+expand when zooming
+do not cluster polygon overlays
+
+Only event pins should cluster. Overlay datasets must remain independent.
+
+STEP 7 — TIME FILTER
+
+Add time filtering for events:
+
+Past 1 hour
+Past 6 hours
+Past 24 hours
+Past 7 days
+
+Pins should update dynamically based on time.
+
+STEP 8 — UI POLISH
+
+Keep the existing glass UI but improve event readability:
+
+event category badge
+confidence indicator
+clear threat score display
+signal icons in event details
+
+Do not redesign the interface.
+
+CRITICAL RULES
+
+Do NOT break:
+
+MapLibre map rendering
+GeoJSON overlay layers
+dataset toggle system
+thermal anomaly layer
+glass HUD UI system
+command palette
+deployment pipeline
+
+All changes must integrate cleanly with the existing architecture.
+
+The goal is to transform the system from a general news map into a true OSINT event fusion platform that only shows relevant geopolitical events.

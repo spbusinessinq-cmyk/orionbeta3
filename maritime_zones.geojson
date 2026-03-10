@@ -1,0 +1,221 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "db-taiwan-001",
+        "name": "Taiwan Strait Median Line",
+        "kind": "disputed_border",
+        "region": "East Asia",
+        "severity": 4,
+        "note": "PRC claims Taiwan as province. Ongoing military posturing. Cross-strait tensions.",
+        "source": "CIA World Factbook",
+        "source_url": "https://www.cia.gov/the-world-factbook/",
+        "updated_at": "2025-01-15T00:00:00Z"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[119.5, 24.0], [120.0, 23.8], [120.5, 23.5], [121.0, 23.2], [121.5, 23.0], [122.0, 22.7], [122.5, 22.5]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "db-kashmir-001",
+        "name": "Line of Control (Kashmir)",
+        "kind": "disputed_border",
+        "region": "South Asia",
+        "severity": 4,
+        "note": "India-Pakistan disputed territory. Ceasefire violations. Nuclear-armed neighbors.",
+        "source": "CIA World Factbook",
+        "source_url": "https://www.cia.gov/the-world-factbook/",
+        "updated_at": "2025-01-15T00:00:00Z"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[74.0, 35.0], [74.5, 34.8], [75.2, 34.4], [76.0, 34.0], [76.8, 33.6], [77.5, 33.3], [78.2, 33.0], [78.5, 32.8]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "db-crimea-001",
+        "name": "Crimea Annexation Line",
+        "kind": "disputed_border",
+        "region": "Eastern Europe",
+        "severity": 5,
+        "note": "Russia annexed Crimea 2014. Internationally unrecognized. Active conflict zone.",
+        "source": "UNGA Resolution 68/262",
+        "source_url": "https://undocs.org/A/RES/68/262",
+        "updated_at": "2025-01-15T00:00:00Z"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[33.2, 45.2], [33.5, 45.5], [34.0, 45.8], [34.5, 46.0], [35.0, 46.3], [35.5, 46.5], [36.0, 46.7]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "db-isratine-001",
+        "name": "Israel-Palestine Green Line",
+        "kind": "disputed_border",
+        "region": "Middle East",
+        "severity": 5,
+        "note": "1949 Armistice Line. Basis for two-state solution. Active conflict zone.",
+        "source": "UNSCO",
+        "source_url": "https://www.un.org/unsc0/",
+        "updated_at": "2025-01-15T00:00:00Z"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[34.9, 31.2], [35.0, 31.4], [35.2, 31.6], [35.3, 31.8], [35.4, 32.0], [35.5, 32.2], [35.6, 32.4]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "db-golan-001",
+        "name": "Golan Heights",
+        "kind": "disputed_border",
+        "region": "Middle East",
+        "severity": 3,
+        "note": "Israeli-occupied Syrian territory. US recognized sovereignty 2019. UNDOF mandate.",
+        "source": "UNDOF/UNSC Resolution 350",
+        "source_url": "https://undocs.org/S/RES/350(1974)",
+        "updated_at": "2025-01-15T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[35.65, 32.8], [35.72, 32.75], [35.8, 32.8], [35.88, 32.95], [35.92, 33.08], [35.88, 33.15], [35.8, 33.18], [35.7, 33.15], [35.62, 33.0], [35.65, 32.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "db-senkaku-001",
+        "name": "Senkaku/Diaoyu Islands",
+        "kind": "disputed_border",
+        "region": "East Asia",
+        "severity": 3,
+        "note": "Japan-administered, claimed by China and Taiwan. Coast guard confrontations.",
+        "source": "CIA World Factbook",
+        "source_url": "https://www.cia.gov/the-world-factbook/",
+        "updated_at": "2025-01-15T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [123.5, 25.7]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "db-nagorno-001",
+        "name": "Nagorno-Karabakh Region",
+        "kind": "disputed_border",
+        "region": "Caucasus",
+        "severity": 2,
+        "note": "Armenia-Azerbaijan conflict resolved 2023. Azerbaijan control. Displacement ongoing.",
+        "source": "OSCE Minsk Group",
+        "source_url": "https://www.osce.org/minsk-group",
+        "updated_at": "2025-01-15T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[46.1, 39.4], [46.5, 39.35], [46.9, 39.5], [47.0, 39.8], [46.85, 39.95], [46.5, 39.98], [46.2, 39.85], [46.1, 39.6], [46.1, 39.4]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "db-westph-001",
+        "name": "Western Sahara Berm Line",
+        "kind": "disputed_border",
+        "region": "North Africa",
+        "severity": 2,
+        "note": "Morocco-Polisario Front dispute. UN MINURSO mandate. Ceasefire in place.",
+        "source": "UN MINURSO",
+        "source_url": "https://minurso.unmissions.org/",
+        "updated_at": "2025-01-15T00:00:00Z"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-13.0, 27.5], [-12.0, 26.5], [-10.8, 25.5], [-9.5, 24.2], [-8.8, 23.0]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "db-lac-west-001",
+        "name": "India-China LAC — Western Sector (Ladakh)",
+        "kind": "disputed_border",
+        "region": "South Asia",
+        "severity": 4,
+        "note": "Line of Actual Control, Ladakh sector. Galwan Valley standoff June 2020 killed 20 Indian, 4 Chinese troops. Ongoing military buildup. Contested Aksai Chin plateau. India and China have not finalized the LAC alignment since 1962.",
+        "source": "MEA India / PRC MFA / IPCS",
+        "source_url": "https://www.mea.gov.in",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[78.0, 34.8], [78.5, 34.5], [79.2, 34.2], [79.8, 33.8], [80.5, 33.5], [80.8, 33.0], [81.2, 32.5], [81.8, 32.0], [82.5, 32.2], [83.0, 32.5]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "db-lac-east-001",
+        "name": "India-China LAC — Eastern Sector (Arunachal Pradesh)",
+        "kind": "disputed_border",
+        "region": "South Asia",
+        "severity": 3,
+        "note": "China claims Arunachal Pradesh as 'South Tibet'. McMahon Line basis disputed. PLA incursions near Tawang (Dec 2022 clash). China renaming Indian villages inside Arunachal territory. India contested under 1914 Simla Convention.",
+        "source": "MEA India / Ministry of Defence / SIPRI",
+        "source_url": "https://www.mea.gov.in",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[91.5, 27.8], [92.5, 27.5], [93.5, 27.2], [94.5, 27.5], [95.5, 27.8], [96.0, 28.0], [96.8, 28.2], [97.2, 28.0]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "db-eth-eri-001",
+        "name": "Ethiopia-Eritrea Disputed Border",
+        "kind": "disputed_border",
+        "region": "Africa",
+        "severity": 3,
+        "note": "1998-2000 war killed 70,000+. Algiers Agreement failed to demarcate border. Badme town remains focal point of dispute. Relations normalized 2018 but border demarcation unresolved. Risk of renewed friction as both countries militarize.",
+        "source": "ICJ / Eritrea-Ethiopia Claims Commission",
+        "source_url": "https://www.icj-cij.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[36.5, 14.3], [37.0, 14.5], [37.5, 14.5], [38.0, 14.2], [38.8, 14.0], [39.5, 14.5], [40.0, 14.8], [40.5, 15.0], [41.0, 15.2], [41.8, 15.0]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "db-scs-spratlys-001",
+        "name": "South China Sea — Nine-Dash Line Claim",
+        "kind": "disputed_border",
+        "region": "East Asia",
+        "severity": 4,
+        "note": "China's expansive maritime claim covering ~90% of the South China Sea. Rejected by 2016 UNCLOS arbitration tribunal. Philippines, Vietnam, Malaysia, Brunei, Taiwan all have overlapping claims. PLA Navy and CCG operate aggressively within the zone. Spratly and Paracel islands militarized.",
+        "source": "PCA Award PH v. CN 2016 / UNCLOS / CSIS AMTI",
+        "source_url": "https://amti.csis.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[109.5, 3.5], [114.0, 3.0], [117.0, 4.5], [119.0, 7.0], [119.5, 10.0], [118.0, 13.0], [115.0, 15.5], [111.5, 17.5], [109.0, 16.5], [107.5, 13.5], [107.0, 10.0], [108.0, 6.5], [109.5, 3.5]]]
+      }
+    }
+  ]
+}

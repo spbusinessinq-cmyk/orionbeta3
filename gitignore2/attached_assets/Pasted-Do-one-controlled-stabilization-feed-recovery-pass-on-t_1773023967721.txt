@@ -1,0 +1,111 @@
+Do one controlled stabilization + feed recovery pass on this O.R.I.O.N. project.
+
+IMPORTANT RULES
+- Do not rewrite the app.
+- Do not redesign architecture.
+- Do not change O.R.I.O.N. branding.
+- Do not remove existing features.
+- Do not do rollback-style changes.
+- Keep edits surgical and minimal.
+- Treat the current imported Replit project as the source of truth.
+- Preserve the current working Replit/PostgreSQL setup unless a change is required for the tasks below.
+
+GOALS
+1. Fix the hydration issue cleanly
+2. Restore healthier feed volume
+3. Improve Watch / Verified distribution without fake merges
+4. Preserve map readability
+5. Keep the current O.R.I.O.N. UI layout intact
+
+TASK 1 — FIX HYDRATION CLEANLY
+Problem:
+There is/was a hydration mismatch caused by how Leaflet CSS is loaded.
+
+Do this exactly:
+1. Inspect src/app/layout.tsx and any global CSS imports
+2. Remove any raw external <link> Leaflet stylesheet tags from <head>
+3. Load Leaflet CSS the proper Next.js way instead
+4. Do not change any unrelated layout/head code
+5. Confirm the hydration mismatch is resolved
+
+TASK 2 — AUDIT THE FULL INGESTION PIPELINE
+Inspect:
+- src/app/api/rss/route.ts
+- src/lib/news-store.ts
+- any debug route or logging already present
+- src/app/page.tsx only if needed for stats display
+
+Report the pipeline clearly:
+- raw article count
+- post-dedupe article count
+- with-location-label count
+- total event count
+- breaking count
+- watch count
+- verified count
+
+Identify the real bottlenecks causing:
+- low total feed volume
+- too many Breaking
+- too few Watch
+- too few Verified
+
+TASK 3 — CONTROLLED CLUSTERING IMPROVEMENT
+Make careful improvements only if supported by the audit.
+
+Allowed:
+- slightly relax title similarity
+- slightly widen merge time window
+- add or improve entity-overlap matching
+- improve same-story matching for geopolitical headlines
+- allow region-aware matching where justified
+
+Not allowed:
+- massive over-merging
+- merging unrelated stories across different conflicts
+- destroying feed volume
+- changing map architecture
+- changing threat scoring logic
+- changing escalation logic
+- changing O.R.I.O.N. UI layout
+
+Target outcome:
+- total feed should improve materially from the current low state
+- Watch should no longer be near zero
+- Verified should no longer be near zero
+- merged stories must still feel legitimate
+
+TASK 4 — MAP TRUST / VISIBILITY CHECK
+Inspect current map rendering logic and confirm the following:
+1. All feed-visible items that have usable location data have an appropriate map representation
+2. Low-confidence country-level items do not turn the map into spam
+3. Trusted city/region placements remain visually primary
+4. Do not redesign markers unless required to restore clarity
+
+If needed, make only minimal corrections to:
+- country-level rendering rules
+- capped low-confidence sampling
+- pin count stats
+
+Do not overdo this. Keep the map readable.
+
+TASK 5 — PRESERVE REPLIT RUNTIME
+Because this app was migrated to Replit:
+- preserve the current working port 5000 setup
+- preserve the current working Bun workflow
+- preserve PostgreSQL/Prisma runtime compatibility
+- do not undo the Replit migration unless absolutely required
+- if Prisma schema or DB config needs any adjustment, explain exactly why
+
+OUTPUT REQUIREMENTS
+At the end return:
+1. root cause summary
+2. files changed
+3. exact ingestion numbers before/after
+4. exact tier distribution before/after
+5. unified diffs only
+
+Before editing:
+- first inspect the current files and state
+- then make the smallest set of changes necessary
+- then verify the app still runs

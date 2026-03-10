@@ -1,0 +1,169 @@
+Execute one controlled improvement pass for the O.R.I.O.N. system with two goals:
+
+1) Fix the Thermal Anomalies layer so it properly renders real thermal polygons instead of appearing to display article pins.
+
+2) Modernize the UI so the system visually feels like a premium intelligence platform rather than an early alpha dashboard.
+
+IMPORTANT RULES
+
+- Do NOT break the map.
+- Do NOT break event ingestion.
+- Do NOT modify clustering or ranking logic.
+- Do NOT remove intel layers.
+- Do NOT change keyboard shortcuts.
+- Do NOT break fusion logic.
+- Only fix the thermal layer wiring and modernize UI presentation.
+
+--------------------------------
+
+SECTION 1 — FIX THERMAL LAYER
+
+Problem:
+The Thermal Anomalies layer appears to show article pins instead of thermal polygons, or shows nothing.
+
+Thermal features should render as geographic shapes representing heat signatures.
+
+TASK 1 — VERIFY DATASET
+
+Confirm the dataset exists:
+
+public/intel/thermal_anomalies.geojson
+
+Check that the dataset contains Polygon geometry.
+
+WorldMap ignores Point geometry, so any Point features must be converted into Polygon octagons.
+
+Each feature should contain fields like:
+
+type: Feature 
+geometry: Polygon 
+properties:
+  name
+  severity
+  frp
+  confidence
+  source
+
+TASK 2 — VERIFY MAP WIRING
+
+Confirm WorldMap.tsx loads the dataset via the manifest like other intel layers.
+
+Check the manifest entry for:
+
+thermal_anomalies
+
+Make sure it is included in:
+
+public/intel/manifest.json
+
+and loaded alongside other layers.
+
+TASK 3 — VERIFY LAYER RENDERING
+
+Ensure the layer renders as a filled polygon overlay.
+
+Use a distinct thermal styling:
+
+color: #ff6f00 
+opacity: ~0.25 
+stroke: subtle outline 
+z-index: above base map but below event pins
+
+The thermal layer should never render as point pins.
+
+TASK 4 — VERIFY TOGGLE
+
+Ensure the toggle:
+
+Thermal Anomalies
+
+in the Intel Layers panel actually controls visibility of the thermal polygon layer.
+
+The keyboard shortcut H should enable and disable the thermal layer.
+
+--------------------------------
+
+SECTION 2 — O.R.I.O.N. UI MODERNIZATION
+
+The interface currently feels like an alpha build.
+
+It needs to feel like a modern intelligence system.
+
+Design direction:
+
+glassy 
+cyber 
+clean 
+premium 
+minimal clutter 
+tactical 
+
+Do NOT add flashy sci-fi effects.
+
+--------------------------------
+
+TASK 5 — HEADER MODERNIZATION
+
+Improve the top header.
+
+Keep the elements:
+
+RSR O.R.I.O.N. 
+O.R.I.O.N. ACTIVE 
+Last update 
+Feed count 
+Pins count 
+Refresh button
+
+But improve spacing, hierarchy, and styling so the header feels like a system command bar rather than a simple navbar.
+
+--------------------------------
+
+TASK 6 — GLASS PANEL STYLE
+
+Modernize UI panels with subtle glass styling.
+
+Panels affected:
+
+Intel Layers 
+Global Threats 
+Intel Status 
+Tier Classification 
+Topics 
+Event Details
+
+Add subtle transparency, consistent borders, and cleaner padding.
+
+Do not reduce readability.
+
+--------------------------------
+
+TASK 7 — REDUCE MAP CLUTTER
+
+Clean up layout spacing so panels do not visually collide with the map.
+
+The map must remain the dominant element of the interface.
+
+Reduce panel density slightly and improve margins.
+
+--------------------------------
+
+TASK 8 — SYSTEM IDENTITY
+
+Ensure the interface visually communicates that this is the O.R.I.O.N. platform.
+
+Improve typography and structure so the system feels cohesive and intentional.
+
+Avoid gimmicks.
+
+--------------------------------
+
+OUTPUT REQUIREMENTS
+
+Return:
+
+1) files modified 
+2) summary of thermal layer fix 
+3) summary of UI modernization 
+4) confirmation that map behavior remains unchanged 
+5) unified diffs only

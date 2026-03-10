@@ -1,0 +1,100 @@
+Do one controlled clustering-upgrade pass with exactly 3 tasks.
+
+IMPORTANT RULES
+- Do not rewrite the app
+- Do not redesign UI layout
+- Do not touch O.R.I.O.N. branding
+- Do not change Replit runtime setup
+- Do not change Prisma/Replit DB setup
+- Do not change map architecture
+- Do not do rollback-style edits
+- Keep all edits surgical
+- Preserve the current working feed pipeline
+- Keep temporary debug logging unless explicitly replaced by better debug
+
+CURRENT BASELINE
+The previous pass confirmed merge logic is working, but Watch/Verified gains are still too small:
+- Breaking: 219
+- Watch: 5
+- Verified: 2
+
+That means the remaining bottleneck is not basic canonical normalization anymore.
+The remaining bottleneck is that same-story articles still fail to cluster when titles differ too much.
+
+GOAL
+Increase legitimate Watch and Verified counts by introducing a stronger “same event signature” concept without causing fake merges.
+
+TASK 1 — ADD EVENT SIGNATURE MATCHING
+In src/lib/news-store.ts, add a lightweight event-signature layer for geopolitical stories.
+
+The event signature should combine:
+1. primary actor / country anchors
+2. secondary actor if present
+3. action family
+4. topic if available
+
+Examples of good signatures:
+- iran + israel + strike + war
+- ukraine + russia + drone + war
+- india + russia + oil + politics/economy
+- israel + gaza + ceasefire + war
+- china + taiwan + military + politics/war
+
+Do not overcomplicate this.
+The purpose is:
+If two headlines share the same strong event signature, they should be much more likely to merge even when wording differs.
+
+TASK 2 — USE EVENT SIGNATURE TO IMPROVE CLUSTERING
+Still in src/lib/news-store.ts:
+
+Update findBestMatch so that:
+- raw title similarity is still considered
+- canonical entity overlap is still considered
+- action family overlap is still considered
+- but strong event-signature matches can lower the merge threshold in a controlled way
+
+Do this carefully:
+- If only one country/entity overlaps, do NOT aggressively merge
+- If the event signature is clearly strong (same primary actor + same secondary/conflict actor + same action family), allow a lower threshold
+- Keep unrelated diplomatic statements and military actions separated unless the signature really matches
+
+This is the key upgrade:
+Move from “headline wording similarity” toward “same underlying event” matching.
+
+TASK 3 — IMPROVE DEBUG OUTPUT FOR CLUSTER QUALITY
+Keep debug sampling small and readable.
+
+For sampled comparisons, log:
+- title A
+- title B
+- primary/secondary actors detected
+- action family detected
+- event signature A
+- event signature B
+- final similarity
+- threshold used
+- accepted / rejected
+- brief reason
+
+Also add one end-of-ingest summary showing:
+- total merges
+- fallback merges
+- sourceCount distribution
+- top event signatures by frequency (small sample only)
+
+IMPORTANT SAFETY RULES
+- Do not touch page.tsx layout
+- Do not touch command palette
+- Do not touch map panels
+- Do not touch marker styling
+- Do not touch hydration
+- Do not touch feed rendering
+- Do not touch map confidence rendering in this pass
+
+OUTPUT REQUIREMENTS
+At the end return:
+1. root cause summary
+2. files changed
+3. exact tier counts before/after if available
+4. a few sample debug lines showing accepted vs rejected clustering
+5. unified diffs only

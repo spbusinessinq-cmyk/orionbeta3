@@ -1,0 +1,77 @@
+Do one controlled feed-to-map parity pass focused ONLY on Watch and Verified visibility.
+
+IMPORTANT RULES
+- Do not rewrite the app
+- Do not redesign UI layout
+- Do not touch O.R.I.O.N. branding
+- Do not change Replit runtime setup
+- Do not change Prisma/Replit DB setup
+- Do not change threat scoring logic
+- Do not change escalation logic
+- Do not do rollback-style edits
+- Keep all edits surgical
+
+CURRENT PROBLEM
+In the UI, Watch is selected and the feed shows multiple Watch items, but the map shows too few pins.
+Example:
+- Watch count in feed is higher than what appears on the map
+- This breaks feed-to-map trust
+
+GOAL
+If a Watch or Verified item is visible in the feed and it has usable location data, it should have a visible map representation.
+Do this without turning the map into clutter.
+
+TASK 1 — AUDIT WATCH / VERIFIED MAP VISIBILITY
+Inspect:
+- src/lib/news-store.ts
+- src/components/WorldMap.tsx
+- src/app/page.tsx
+- any code that filters events for map rendering
+
+Report specifically:
+1. how many Watch items exist
+2. how many Verified items exist
+3. how many Watch items have usable coords
+4. how many Verified items have usable coords
+5. how many Watch items are actually rendered on the map
+6. how many Verified items are actually rendered on the map
+7. the exact reasons any Watch/Verified items are excluded
+
+TASK 2 — RESTORE FEED-TO-MAP PARITY FOR WATCH / VERIFIED
+Make a controlled fix so that:
+- Watch items with usable location data appear on the map
+- Verified items with usable location data appear on the map
+- city and region placements remain visually primary
+- country-level Watch/Verified items may use a secondary visual treatment if needed
+- do not spam the map with every low-confidence Breaking item
+
+Important:
+Prioritize parity for Watch and Verified first.
+If needed, treat Watch/Verified country-level items more generously than Breaking country-level items.
+
+TASK 3 — ADD CLEAN DEBUG VISIBILITY
+Add a concise debug summary for this pass:
+- Watch total
+- Watch with coords
+- Watch rendered
+- Verified total
+- Verified with coords
+- Verified rendered
+- hidden by rule count
+
+Keep the logs small and readable.
+
+SAFETY RULES
+- Do not touch panel layout
+- Do not touch command palette
+- Do not touch marker styling unless required for secondary Watch/Verified visibility
+- Do not touch feed rendering
+- Do not touch hydration
+- Do not touch clustering logic in this pass
+
+OUTPUT REQUIREMENTS
+At the end return:
+1. root cause summary
+2. files changed
+3. exact watch/verified visibility counts before/after
+4. unified diffs only

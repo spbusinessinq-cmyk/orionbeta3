@@ -1,0 +1,239 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cz-ukraine-east-001",
+        "name": "Ukraine Eastern Front",
+        "kind": "conflict_zone",
+        "region": "Eastern Europe",
+        "severity": 5,
+        "note": "Active front line: Kupyansk-Lyman-Bakhmut-Avdiivka-Zaporizhzhia axis. Russian-occupied Luhansk, eastern Donetsk, Zaporizhzhia strip, eastern Kherson. Artillery, drone and glide-bomb warfare ongoing.",
+        "source": "ISW/ACLED Conflict Data",
+        "source_url": "https://www.understandingwar.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[37.5, 50.5], [38.8, 50.2], [40.0, 49.5], [40.2, 48.8], [39.8, 48.0], [39.2, 47.5], [38.5, 47.0], [37.8, 46.8], [36.8, 46.5], [36.0, 46.5], [35.2, 47.0], [34.8, 46.8], [34.5, 46.4], [35.0, 46.2], [36.5, 46.8], [37.2, 47.8], [37.8, 49.2], [37.5, 50.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cz-ukraine-kharkiv-001",
+        "name": "Kharkiv Border Sector",
+        "kind": "conflict_zone",
+        "region": "Eastern Europe",
+        "severity": 5,
+        "note": "Russian cross-border operations. Vovchansk incursion zone. Persistent shelling of Kharkiv city. Ukrainian counter-operations ongoing.",
+        "source": "ISW/ACLED Conflict Data",
+        "source_url": "https://www.understandingwar.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[36.2, 49.8], [37.2, 49.6], [38.0, 49.8], [38.8, 50.3], [38.5, 50.9], [37.8, 51.2], [36.8, 51.3], [36.0, 51.0], [35.6, 50.5], [35.8, 50.0], [36.2, 49.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cz-russia-kursk-001",
+        "name": "Kursk-Belgorod Border Zone",
+        "kind": "conflict_zone",
+        "region": "Eastern Europe",
+        "severity": 4,
+        "note": "Ukrainian cross-border incursion zone (Aug 2024). Ongoing drone and missile strikes on Belgorod Oblast. Kursk Nuclear Power Plant vicinity under elevated threat. Active evacuation orders in border districts.",
+        "source": "ISW/ACLED Conflict Data",
+        "source_url": "https://www.understandingwar.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[32.5, 51.2], [34.2, 51.0], [36.5, 51.2], [38.5, 51.8], [39.5, 52.5], [38.5, 53.2], [36.5, 53.5], [34.5, 53.2], [32.8, 52.5], [32.2, 51.8], [32.5, 51.2]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cz-gaza-001",
+        "name": "Gaza Combat Zone",
+        "kind": "conflict_zone",
+        "region": "Middle East",
+        "severity": 5,
+        "note": "IDF ground operations ongoing. Dense urban combat. Humanitarian crisis. Hostage situation. Rafah crossing intermittently closed.",
+        "source": "UN OCHA/ACLED",
+        "source_url": "https://www.ochaopt.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[34.22, 31.22], [34.40, 31.20], [34.53, 31.25], [34.56, 31.35], [34.55, 31.48], [34.52, 31.57], [34.45, 31.60], [34.38, 31.60], [34.30, 31.55], [34.23, 31.50], [34.21, 31.38], [34.22, 31.28], [34.22, 31.22]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cz-lebanon-south-001",
+        "name": "Southern Lebanon / Litani Zone",
+        "kind": "conflict_zone",
+        "region": "Middle East",
+        "severity": 4,
+        "note": "Post-ceasefire fragile stability. IDF conducted extensive ground operations to Litani River. Hezbollah rearmament concern. UNIFIL mandate active. Border communities partially evacuated.",
+        "source": "ACLED/UN UNIFIL",
+        "source_url": "https://acleddata.com",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[35.12, 33.05], [35.32, 33.00], [35.55, 33.00], [35.78, 33.10], [35.92, 33.22], [35.95, 33.40], [35.85, 33.55], [35.68, 33.65], [35.52, 33.70], [35.35, 33.65], [35.18, 33.55], [35.05, 33.40], [35.00, 33.22], [35.08, 33.10], [35.12, 33.05]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cz-syria-001",
+        "name": "Syria Post-Assad Transition Zone",
+        "kind": "conflict_zone",
+        "region": "Middle East",
+        "severity": 4,
+        "note": "HTS-led interim authority following Assad fall Dec 2024. ISIS remnants active in east. SDF-HTS tensions in northeast. Turkish-backed forces in north. Israeli airstrikes on weapons depots. Multi-faction instability persists.",
+        "source": "ACLED/Syrian Observatory",
+        "source_url": "https://acleddata.com",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[36.0, 32.5], [37.5, 32.3], [38.8, 32.5], [40.2, 33.0], [41.5, 33.8], [42.2, 34.5], [42.4, 35.5], [42.2, 36.5], [41.2, 37.0], [40.0, 37.3], [38.8, 37.0], [37.5, 36.8], [36.8, 36.5], [36.2, 36.0], [35.8, 35.5], [35.6, 34.5], [35.8, 33.5], [36.0, 33.0], [36.0, 32.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cz-yemen-001",
+        "name": "Yemen Civil War",
+        "kind": "conflict_zone",
+        "region": "Middle East",
+        "severity": 4,
+        "note": "Houthi-Saudi coalition conflict. US/UK airstrikes on Houthi positions. Red Sea maritime attacks continue from Houthi-held territory in northwest. Humanitarian crisis: worst in world.",
+        "source": "ACLED/UN OCHA",
+        "source_url": "https://acleddata.com",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[42.8, 12.7], [44.0, 12.2], [45.5, 12.0], [47.5, 12.5], [49.5, 13.0], [51.5, 14.0], [52.8, 15.0], [53.5, 16.5], [53.5, 18.0], [52.5, 18.8], [50.5, 19.0], [48.0, 18.8], [45.5, 18.0], [44.0, 17.5], [43.2, 16.0], [42.8, 14.5], [42.6, 13.0], [42.8, 12.7]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cz-sudan-001",
+        "name": "Sudan Civil War",
+        "kind": "conflict_zone",
+        "region": "Africa",
+        "severity": 5,
+        "note": "RSF vs SAF. Darfur mass atrocities. Khartoum contested. 8M+ displaced — world's largest displacement crisis. Famine conditions spreading.",
+        "source": "ACLED/UN OCHA",
+        "source_url": "https://acleddata.com",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[23.5, 12.5], [25.5, 12.0], [28.0, 12.2], [32.0, 12.5], [35.0, 13.0], [37.5, 14.5], [38.5, 17.0], [38.0, 19.5], [36.0, 21.0], [33.0, 21.5], [29.0, 21.0], [25.0, 19.5], [22.5, 18.0], [21.5, 15.5], [21.5, 13.5], [23.5, 12.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cz-myanmar-001",
+        "name": "Myanmar Civil War",
+        "kind": "conflict_zone",
+        "region": "Southeast Asia",
+        "severity": 4,
+        "note": "Three Brotherhood Alliance offensives (Operation 1027). EAO control expanding in Shan, Rakhine, Chin, Karen states. Junta airstrikes on civilian areas. IDP crisis exceeds 3M.",
+        "source": "ACLED Conflict Data",
+        "source_url": "https://acleddata.com",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[92.5, 10.0], [94.0, 9.8], [96.5, 10.5], [99.0, 12.0], [100.5, 14.5], [101.2, 17.5], [101.0, 20.0], [99.5, 22.5], [97.5, 25.0], [95.0, 27.0], [93.0, 27.5], [92.2, 25.5], [92.0, 22.0], [92.5, 18.5], [93.0, 15.0], [92.5, 12.0], [92.5, 10.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cz-drc-001",
+        "name": "Eastern DRC / M23 Conflict",
+        "kind": "conflict_zone",
+        "region": "Africa",
+        "severity": 5,
+        "note": "M23 seized Goma Jan 2025. Rwanda involvement. Bukavu offensive ongoing. SADC/EAC forces engaged. 7M+ IDPs in eastern DRC — catastrophic humanitarian situation.",
+        "source": "ACLED/UN OCHA",
+        "source_url": "https://acleddata.com",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[25.5, -4.8], [27.0, -5.0], [28.5, -4.2], [29.5, -3.0], [30.5, -1.5], [30.8, 0.2], [30.2, 1.5], [28.5, 1.8], [27.0, 1.2], [25.8, -0.5], [25.2, -2.5], [25.3, -4.0], [25.5, -4.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cz-somalia-001",
+        "name": "Somalia / Al-Shabaab Zone",
+        "kind": "conflict_zone",
+        "region": "Africa",
+        "severity": 3,
+        "note": "Al-Shabaab insurgency in south-central. Government/ATMIS offensive operations. High-profile attacks on Mogadishu. US airstrikes ongoing. AMISOM drawdown creating security gaps.",
+        "source": "ACLED Conflict Data",
+        "source_url": "https://acleddata.com",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[41.5, -1.8], [43.5, -1.5], [46.0, -0.5], [48.5, 1.0], [51.0, 3.5], [51.5, 6.5], [50.5, 9.0], [48.5, 10.5], [46.0, 11.0], [43.5, 10.0], [42.0, 8.0], [41.0, 5.5], [40.5, 2.5], [40.8, 0.0], [41.5, -1.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cz-iran-war-001",
+        "name": "Iran — Active War Zone (US/Israeli Campaign)",
+        "kind": "conflict_zone",
+        "region": "Middle East",
+        "severity": 5,
+        "note": "Large-scale US and Israeli military campaign targeting Iranian nuclear and military infrastructure commenced Feb 28 2026. US B-2 Spirit and F-22 strikes on Natanz, Fordow, Isfahan nuclear sites. IDF F-35I Adir coordinated strikes on IRGC missile production and air defense nodes. Iranian air defense degraded. IRGC ballistic missile salvos and drone swarms in retaliation across the region. Active war status confirmed by US CENTCOM, IDF spokesperson, and multiple wire services. No civil aviation operating.",
+        "source": "CENTCOM / IDF Spokesperson / Reuters / AP / ISW",
+        "source_url": "https://www.centcom.mil",
+        "updated_at": "2026-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[44.0, 25.0], [49.0, 24.0], [54.0, 25.0], [58.0, 26.0], [63.0, 27.0], [63.5, 32.0], [62.0, 38.0], [58.0, 40.0], [53.0, 40.0], [48.0, 38.0], [44.0, 37.0], [44.5, 32.0], [44.0, 28.0], [44.0, 25.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cz-israel-strike-exposure-001",
+        "name": "Israel — Active Strike Exposure Zone",
+        "kind": "conflict_zone",
+        "region": "Middle East",
+        "severity": 4,
+        "note": "Israeli territory under direct fire from Iranian ballistic missile salvos (Shahab-3, Emad, Fattah-1 hypersonic), Houthi cruise missiles and drones from Yemen, and residual Hezbollah rocket fire from Lebanon. Iron Dome and David's Sling intercept rates approximately 85-92% documented by IDF. Iron Beam system being surge-deployed. Dimona nuclear site on high alert. Population sheltering in progress across northern/central Israel.",
+        "source": "IDF Spokesperson / CENTCOM / Times of Israel / Haaretz",
+        "source_url": "https://www.idf.il",
+        "updated_at": "2026-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[34.2, 29.5], [35.9, 29.5], [36.0, 31.5], [35.5, 32.5], [35.1, 33.4], [34.2, 33.2], [34.2, 31.5], [34.2, 29.5]]]
+      }
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+You are continuing development on the deployed OSINT platform RSR O.R.I.O.N.
+
+The backend pipeline is stable and must NOT be changed in this pass.
+
+Do NOT touch:
+- OSINT relevance filter
+- category classifier
+- confidence scoring
+- threat scoring
+- clustering logic
+- time filters
+- overlay rendering logic
+- deployment config
+
+This pass has two goals only:
+
+GOAL 1 — FIX REMAINING HEADER / STATS UI ISSUES
+GOAL 2 — IMPLEMENT A LIGHTWEIGHT VIEW MODE SYSTEM
+
+CURRENT PROBLEMS TO FIX
+
+1. Stats strip text is visually broken
+Under the top-left total counters there are tiny overlapping or clipped letters under:
+- Total
+- Break
+- Watch
+- Verf
+
+This needs to be cleaned up immediately.
+The labels should be fully readable, aligned, and not colliding with the numbers or panel boundaries.
+
+2. Header status language is wrong
+The top command strip currently says generic “SYSTEM ONLINE”.
+This should say:
+O.R.I.O.N. ONLINE
+
+It should feel like the system itself is online, not a generic machine status.
+
+3. The OSINT badge is too weak
+The OSINT chip should be more present and intentional.
+Do not make it huge or gaudy, but it should:
+- glow subtly
+- feel active
+- feel like a classified module / active mode tag
+- have stronger identity than it currently has
+
+4. Header still needs a slightly stronger O.R.I.O.N. identity
+Keep the current command strip structure, but make the top-left brand area feel more premium and system-like.
+
+IMPLEMENTATION TASK
+
+Add a lightweight VIEW MODE system.
+
+This should be a real UI feature, not just a style tweak.
+
+Add a small control in the top command strip or a clean nearby location called something like:
+VIEW MODE
+or
+MODE
+
+Provide 3 modes:
+
+1. Operator
+- default mode
+- current full operating layout
+- stats, escalation watch, overlays, feed, system key all available
+
+2. Focus
+- hides or collapses secondary reference / helper modules
+- preserves map, feed, detail panel, and top command strip
+- reduces screen clutter for active monitoring
+
+3. Briefing
+- cleaner presentation-oriented mode
+- hides low-priority system chrome
+- keeps map + signal feed + key top stats
+- intended for showing the platform cleanly on screen
+
+REQUIREMENTS FOR VIEW MODE
+
+- Must be front-end only
+- Must not touch backend systems
+- Must not break existing panel functionality
+- Must preserve current working layout in Operator mode
+- Can be implemented via state + conditional rendering / collapsing
+- Must use the existing O.R.I.O.N. glass / tactical UI style
+- Should feel like a real system control, not a consumer dropdown
+
+STATS STRIP FIX REQUIREMENTS
+
+- Correct label clipping / overlap
+- Ensure all four metric cells have clean typography hierarchy
+- Keep compact layout but make it readable
+- Do not let labels collide with borders or counters
+- Use consistent vertical spacing
+
+HEADER FIX REQUIREMENTS
+
+- Change status wording to O.R.I.O.N. ONLINE
+- Improve alignment in the command strip
+- Make OSINT chip more visible with restrained glow
+- Preserve black / graphite / teal / amber / red tactical color discipline
+- Do not reintroduce red overload
+
+VISUAL DIRECTION
+
+Keep:
+- black / graphite base
+- teal / green for system state
+- amber for watch / caution
+- red only for actual threat / ingest / critical
+- white / gray for labels / structure
+
+Avoid:
+- overusing red
+- giant glowing badges
+- playful rounded app controls
+- breaking the tactical terminal feel
+
+DELIVERABLE
+
+After changes:
+- restart / validate
+- summarize exactly what was fixed in the stats strip
+- summarize exactly what changed in the header
+- explain how VIEW MODE works
+- confirm Operator mode preserves the current full layout
+- confirm no backend or pipeline systems were touched
+
+The result should:
+- fix the visible stats/header issues
+- make O.R.I.O.N. feel more alive in the command bar
+- add one meaningful new interface capability without destabilizing the platform

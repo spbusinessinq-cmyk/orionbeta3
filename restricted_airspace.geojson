@@ -1,0 +1,149 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mz-redsea-001",
+        "name": "Red Sea / Bab el-Mandeb Risk Zone",
+        "kind": "maritime_zone",
+        "region": "Middle East",
+        "severity": 5,
+        "note": "Active Houthi anti-ship missile, drone and WBIED attacks on commercial vessels. UKMTO DANGER AREA extends full length of Red Sea. Rerouting via Cape of Good Hope now standard.",
+        "source": "UKMTO/JMIC Advisory 2025-012",
+        "source_url": "https://www.ukmto.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[39.5, 12.0], [41.0, 11.8], [43.0, 12.5], [44.5, 14.0], [45.2, 16.5], [44.8, 18.5], [43.5, 20.5], [42.2, 22.0], [41.0, 23.5], [39.5, 24.5], [38.5, 23.5], [37.8, 22.0], [38.0, 20.0], [38.5, 18.0], [38.8, 16.0], [38.8, 14.0], [39.5, 12.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mz-gulf-aden-001",
+        "name": "Gulf of Aden Risk Zone",
+        "kind": "maritime_zone",
+        "region": "East Africa",
+        "severity": 4,
+        "note": "Houthi maritime threat zone extension. Drone boat and submarine-drone activity. CTF-153 naval coalition patrols active. UKMTO voluntary reporting area.",
+        "source": "UKMTO/JMIC Advisory",
+        "source_url": "https://www.ukmto.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[43.2, 10.8], [45.5, 10.5], [48.0, 11.0], [50.5, 12.0], [52.5, 13.0], [53.5, 14.5], [52.8, 15.8], [51.0, 16.0], [49.0, 15.5], [46.5, 14.5], [44.5, 13.0], [43.2, 11.8], [43.2, 10.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mz-strait-hormuz-001",
+        "name": "Strait of Hormuz Chokepoint",
+        "kind": "maritime_zone",
+        "region": "Middle East",
+        "severity": 4,
+        "note": "Critical chokepoint: 20% of global oil transit. IRGCN fast boat harassment. Tanker seizure incidents. GPS jamming reported. Inbound/outbound shipping lanes tightly defined.",
+        "source": "US Maritime Administration",
+        "source_url": "https://www.maritime.dot.gov",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[55.5, 25.8], [56.8, 25.2], [58.0, 25.5], [58.8, 26.2], [58.8, 27.0], [58.0, 27.5], [57.0, 27.5], [55.8, 27.0], [55.2, 26.5], [55.3, 26.0], [55.5, 25.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mz-persian-gulf-001",
+        "name": "Persian Gulf Tension Zone",
+        "kind": "maritime_zone",
+        "region": "Middle East",
+        "severity": 4,
+        "note": "Elevated Iran-US tensions. IRGCN vessel harrassment. GPS spoofing/jamming reported near UAE coast. Tanker tracking anomalies. USN 5th Fleet patrols.",
+        "source": "US Maritime Administration",
+        "source_url": "https://www.maritime.dot.gov",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[47.8, 24.5], [49.0, 24.2], [51.0, 24.5], [53.5, 25.5], [55.5, 26.5], [56.0, 28.0], [55.5, 29.5], [54.0, 30.2], [52.0, 30.5], [50.0, 30.0], [48.5, 29.2], [47.5, 28.0], [47.2, 26.0], [47.5, 25.0], [47.8, 24.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mz-scs-001",
+        "name": "South China Sea Disputed Waters",
+        "kind": "maritime_zone",
+        "region": "Southeast Asia",
+        "severity": 3,
+        "note": "PRC nine-dash line claims disputed by Vietnam, Philippines, Malaysia, Brunei, Indonesia. CCG water cannon incidents at Second Thomas Shoal. Fiery Cross/Subi Reef militarization.",
+        "source": "IMO/Regional Advisories",
+        "source_url": "https://www.imo.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[104.5, 4.0], [106.5, 3.5], [109.0, 4.2], [112.0, 6.0], [115.0, 8.5], [117.5, 11.5], [119.0, 14.0], [119.2, 17.0], [118.5, 19.0], [117.0, 20.0], [115.2, 20.0], [112.5, 18.5], [109.5, 15.8], [107.0, 12.5], [105.5, 9.5], [104.5, 7.0], [104.2, 5.5], [104.5, 4.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mz-taiwan-strait-001",
+        "name": "Taiwan Strait Transit Corridor",
+        "kind": "maritime_zone",
+        "region": "East Asia",
+        "severity": 4,
+        "note": "PLA Navy/PLAAF exercises disrupt commercial traffic. Median line crossings routine. PLAN carrier task groups patrol approaches. US/allied warships conduct FONOPs. High escalation risk.",
+        "source": "Regional Maritime Advisory",
+        "source_url": "https://www.imo.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[118.5, 22.0], [120.0, 21.8], [121.5, 22.2], [122.8, 23.2], [123.0, 24.8], [122.5, 26.0], [121.0, 26.5], [119.5, 26.0], [118.2, 25.2], [117.8, 24.0], [118.0, 22.8], [118.5, 22.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mz-kerch-001",
+        "name": "Black Sea — Kerch Strait",
+        "kind": "maritime_zone",
+        "region": "Eastern Europe",
+        "severity": 5,
+        "note": "Ukraine USV (uncrewed surface vehicle) attacks on Russian Black Sea Fleet. Sevastopol port contested. Mining risk. Russian naval access severely degraded. Kerch Bridge damaged. Grain corridor suspended.",
+        "source": "IMO Black Sea Advisory",
+        "source_url": "https://www.imo.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[33.0, 44.5], [35.0, 44.2], [37.0, 45.0], [37.5, 46.2], [37.0, 47.0], [35.5, 47.2], [34.0, 46.8], [33.0, 46.0], [32.5, 45.2], [33.0, 44.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mz-gulf-oman-001",
+        "name": "Gulf of Oman Risk Zone",
+        "kind": "maritime_zone",
+        "region": "Middle East",
+        "severity": 4,
+        "note": "Elevated threat from regional tensions. IRGCN naval activity. Historical tanker seizure incidents. Maritime advisory in effect for all commercial shipping.",
+        "source": "US Maritime Administration",
+        "source_url": "https://www.maritime.dot.gov",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[56.5, 22.5], [58.0, 22.2], [60.0, 22.8], [61.5, 23.8], [62.0, 25.2], [61.5, 26.0], [60.0, 26.2], [58.5, 25.8], [57.2, 25.0], [56.5, 24.0], [56.3, 23.2], [56.5, 22.5]]]
+      }
+    }
+  ]
+}

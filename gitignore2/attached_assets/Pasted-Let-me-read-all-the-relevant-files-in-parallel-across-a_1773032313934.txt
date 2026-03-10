@@ -1,0 +1,65 @@
+Let me read all the relevant files in parallel across all three tasks:
+
+Let me check the GeoJSON files more carefully, and also read a wider section of the RSS pipeline to understand the full yield chain:
+
+Let me read the WorldMap intel filter code and more of the intel GeoJSON details:
+
+Let me directly parse disputed_borders to find the exact error, and also read the RSS route's source list region and intel layer styles:
+
+Let me read the full disputed_borders.geojson to find the exact syntax error:
+
+Found the bug — line 145 has [[[ (triple bracket) for a LineString but only closes with ]]. Let me also read conflict_zones to assess geometry quality:
+
+Now I have everything I need. Let me implement all three tasks in parallel. Starting with all the surgical edits:
+
+Now add the country-pulse keyframe, update intel layer styles, and add RSS sources — all in parallel:
+
+Now add the RSS sources and update the allowlist and article cap:
+
+Let me verify the disputed_borders JSON is valid, then restart:
+
+Everything is clean. Notably, the logs already show the new sources contributing — Watch events went from 6 → 9 within the same cycle, and disputed_borders is now loading correctly (8 features).
+
+Output: Summary
+
+Task 1 — Country-level Watch/Verified pin polish
+Files: src/app/globals.css
+
+Increased overall opacity from 0.5 → 0.68 (visible presence, clearly secondary)
+Added @keyframes country-pulse — 10s cycle (vs 5s normal), max expansion only 20px (vs 28px), lower max opacity (0.22 vs 0.4) — faint but alive
+Replaced animation: none; opacity: 0 with the slow country-pulse at 2s delay
+Increased halo opacity 0.3 → 0.4
+Restored a very subtle core glow box-shadow: 0 0 2px currentColor — same family as primary pins, just quieter
+Task 2 — Feed Volume Audit
+Files: src/app/api/rss/route.ts
+
+Root cause of low event count (239): Location extraction yield is the primary bottleneck — only ~21% of deduped articles (278/1322) extract a usable location label. The other ~1044 articles are dropped at the API level. Source count (78 feeds) and the MAX_RAW_ARTICLES cap are not the current limiters.
+
+The Google News search feeds (google-iran, google-ukraine, google-mideast, google-europe) are your highest-yield sources because the search topic IS the location — near 100% location label yield from those feeds.
+
+4 targeted additions made (high location-yield, safe domains):
+
+Google News Russia — filling the #2 story gap (Russia appears in 19-24 raw articles but had no direct query feed)
+Google News Israel/Gaza — direct coverage of top-conflict pair
+Google News Africa — continent currently underrepresented
+Al Jazeera English — geopolitically dense, now allowlisted
+MAX_RAW_ARTICLES raised from 1500 → 2000 to give headroom.
+
+Already visible: Watch events 6 → 9 in first post-change ingest cycle.
+
+Next recommended expansion pass: Lower location confidence threshold from >= 2 to >= 1 (currently lowConfidenceRejected: ~34 per cycle) — test impact on false-positive rate first with shadow mode.
+
+Task 3 — Intel Layer Geometry / Accuracy Prep
+Files: public/intel/disputed_borders.geojson, src/components/WorldMap.tsx
+
+Bug fixed: disputed_borders.geojson line 145 had [[[ (triple bracket, Polygon syntax) on a LineString geometry with only ]] closing — invalid JSON at position 5274. Confirmed: layer now renders correctly ([INTEL OVERLAY] Loaded disputed_borders: 8 features).
+
+Visual hierarchy improved in INTEL_LAYER_STYLES:
+
+Layer	Before	After
+conflict_zones	fill 0.15, weight 2, solid	fill 0.18, weight 2, solid (most dominant)
+disputed_borders	fill 0, weight 2, dashed	fill 0.06, weight 2.5, dashed (lines more visible)
+maritime_zones	fill 0.1, weight 1, solid	fill 0.1, weight 1.5, solid
+sanctions	fill 0, weight 2, solid	fill 0.05, weight 1.5, dashed 4/3 (differentiated from borders)
+restricted_airspace	fill 0.1, weight 1, solid	fill 0.1, weight 1.5, dashed 6/3 (aviation feel)
+Recommended next geometry pass: The current polygons are hand-drawn bounding boxes (9–18 vertices). The next full pass should replace them with actual simplified WGS84 boundary data from public sources (NaturalEarth, UNOCHA for conflict zones, ICAO NOTAMs for airspace). Start with conflict_zones (Ukraine Eastern Front needs updating most urgently given Feb–Mar 2026 frontline shifts) and maritime_zones (Red Sea corridor shape is too rectangular).

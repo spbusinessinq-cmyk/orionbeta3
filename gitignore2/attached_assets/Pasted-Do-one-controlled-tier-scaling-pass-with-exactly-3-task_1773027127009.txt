@@ -1,0 +1,92 @@
+Do one controlled tier-scaling pass with exactly 3 tasks.
+
+IMPORTANT RULES
+- Do not rewrite the app
+- Do not redesign UI layout
+- Do not touch O.R.I.O.N. branding
+- Do not change Replit runtime setup
+- Do not change Prisma/Replit DB setup
+- Do not change map architecture
+- Do not do rollback-style edits
+- Keep all edits surgical
+
+CURRENT BASELINE
+Fresh ingest is now working and Watch/Verified are no longer zero.
+Current observed result is approximately:
+- Breaking: 214
+- Watch: 4
+- Verified: 2
+
+Goal:
+Increase legitimate Watch and Verified counts further without fake merges.
+
+TASK 1 — EXPAND CANONICAL ENTITY NORMALIZATION
+Inspect src/lib/news-store.ts and improve canonical matching for geopolitical stories.
+
+Add / refine normalization for:
+- capitals and major cities to country anchors
+  - Tehran → Iran
+  - Moscow / Kremlin → Russia
+  - Kyiv / Kiev → Ukraine
+  - Beijing → China
+  - Jerusalem / Tel Aviv / IDF → Israel
+  - Gaza / Hamas where appropriate
+  - White House / Washington when used in geopolitical context → US
+- demonym variants and plural forms
+- major organizations / blocs
+  - NATO
+  - EU / European Union
+  - UN
+- regional conflict actors where justified
+  - Houthis / Houthi / Ansar Allah
+  - Hezbollah
+Do this carefully and avoid ambiguous junk terms.
+
+TASK 2 — PHRASE / EVENT FAMILY NORMALIZATION
+Still in src/lib/news-store.ts, improve same-story clustering by normalizing common geopolitical event phrases.
+
+Examples:
+- strike / struck / strikes
+- attack / attacked / attacks
+- missile / missiles
+- talks / negotiations / meeting
+- detained / arrest / arrested
+- sanction / sanctions
+- ceasefire / truce
+- drone / drones
+- nuclear / enrichment where appropriate
+
+Do not turn this into broad stemming for everything.
+Only add high-signal geopolitical/action families.
+
+Goal:
+Two headlines about the same conflict event from different publishers should merge more often when they clearly refer to the same actor + same event family.
+
+TASK 3 — ADD DEBUG VISIBILITY FOR MERGE DECISIONS
+Add temporary but clean debug logging for clustering.
+
+For a small sample of candidate comparisons, log:
+- title A
+- title B
+- normalized entities matched
+- normalized event/action terms matched
+- similarity score
+- merge accepted or rejected
+- reason/threshold
+
+Keep logs concise and sample-limited so console doesn’t become useless.
+
+OUTPUT REQUIREMENTS
+At the end return:
+1. root cause summary
+2. files changed
+3. exact tier counts before/after if available
+4. unified diffs only
+
+DO NOT:
+- touch page layout
+- touch command palette
+- touch map panels
+- touch marker styling
+- touch feed rendering
+- touch hydration unless required by this pass

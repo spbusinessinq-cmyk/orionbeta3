@@ -1,0 +1,221 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si-ukraine-east-001",
+        "name": "Ukraine East/South — Heavy Bombardment Zone",
+        "kind": "strike_indicators",
+        "region": "Eastern Europe",
+        "severity": 5,
+        "note": "Heaviest documented strike activity in Europe since WWII. Russian ballistic/cruise missile and Shahed drone strikes on Zaporizhzhia, Donetsk, Kherson. Ukrainian S-300 repurposed ground fire, ATACMS, Storm Shadow/SCALP used against Russian targets. ISW documents 50-200 strike incidents per week in this zone.",
+        "source": "ISW / ACLED / Ukraine Air Force Telegram / UK MOD",
+        "source_url": "https://www.understandingwar.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[34.5, 46.8], [36.0, 46.5], [38.0, 47.0], [39.5, 47.8], [40.0, 48.8], [39.0, 49.5], [37.5, 49.5], [36.0, 49.0], [34.5, 48.0], [34.5, 46.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si-gaza-001",
+        "name": "Gaza Strip — Continuous Strike Zone",
+        "kind": "strike_indicators",
+        "region": "Middle East",
+        "severity": 5,
+        "note": "IDF campaign since Oct 7 2023 represents the highest density of airstrikes in the modern era per square kilometer. Gaza Strip (365 sq km) has received thousands of JDAM, GBU, and artillery strikes. UN and Airwaves track daily strike activity. North Gaza has been nearly depopulated by bombardment and displacement.",
+        "source": "ACLED / Airwaves / UN OCHA / IDF Spokesman",
+        "source_url": "https://acleddata.com",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[34.25, 31.2], [34.5, 31.2], [34.55, 31.4], [34.55, 31.6], [34.45, 31.75], [34.35, 31.75], [34.25, 31.55], [34.2, 31.35], [34.25, 31.2]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si-s-lebanon-001",
+        "name": "Southern Lebanon — Israeli Strike Zone",
+        "kind": "strike_indicators",
+        "region": "Middle East",
+        "severity": 4,
+        "note": "IDF strikes on Hezbollah targets throughout southern Lebanon. Sept-Oct 2024 intensity surge: Beirut southern suburb Dahieh strikes, Nasrallah killed Sep 27 2024, thousands of strikes before ceasefire Nov 26 2024. Ceasefire fragile. IDF retains right to strike violators. Ongoing post-ceasefire Israeli operations documented.",
+        "source": "ACLED / Airwaves / IDF Spokesman / UNIFIL",
+        "source_url": "https://acleddata.com",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[35.0, 33.0], [35.8, 33.0], [36.5, 33.5], [36.8, 34.0], [36.5, 34.5], [35.8, 34.5], [35.2, 34.2], [35.0, 33.8], [35.0, 33.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si-syria-nw-001",
+        "name": "Syria — Northwestern Active Strike Zone",
+        "kind": "strike_indicators",
+        "region": "Middle East",
+        "severity": 4,
+        "note": "Multi-party strike activity: Russian Air Force, Syrian Air Force (until Dec 2024 fall), Turkish drone strikes on Kurdish positions, US strikes on ISIS remnants. Israeli strikes on Hezbollah/IRGC weapons transfers and Syrian military assets continuing post-Assad. Idlib and Deir ez-Zor highest-activity areas.",
+        "source": "ACLED / SOHR / Airwaves / ISW",
+        "source_url": "https://acleddata.com",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[35.8, 34.5], [37.2, 34.5], [38.5, 35.0], [40.0, 35.5], [41.0, 36.5], [40.5, 37.5], [38.5, 37.5], [36.5, 37.0], [35.5, 36.0], [35.5, 35.0], [35.8, 34.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si-yemen-001",
+        "name": "Yemen — Coalition and Houthi Strike Zone",
+        "kind": "strike_indicators",
+        "region": "Middle East",
+        "severity": 5,
+        "note": "US/UK strikes on Houthi military infrastructure since Jan 12 2024 (Operation Poseidon Archer). Saudi coalition continues air campaign. Houthi drones/ballistic missiles strike Israel, Red Sea shipping, Saudi Arabia. Sanaa area, Hodeidah port, Sa'ada governorate most heavily struck. Multiple warring factions across the country.",
+        "source": "ACLED / CENTCOM / Saudi MOD / Houthi Media",
+        "source_url": "https://acleddata.com",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[42.5, 13.5], [44.0, 13.0], [46.5, 13.5], [48.0, 14.0], [48.5, 15.5], [47.5, 17.0], [45.5, 17.5], [43.5, 17.0], [42.0, 15.5], [42.0, 14.5], [42.5, 13.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si-sudan-khartoum-001",
+        "name": "Sudan — Khartoum Bombardment Zone",
+        "kind": "strike_indicators",
+        "region": "Africa",
+        "severity": 5,
+        "note": "SAF air force has conducted hundreds of airstrikes on RSF-held areas of Khartoum, Omdurman. RSF uses artillery against civilian areas. Khartoum International Airport struck and closed. UN reports widespread use of explosive weapons in populated areas. Entire city of 7 million displaced or trapped.",
+        "source": "ACLED / UN OCHA / Airwaves / MSF",
+        "source_url": "https://acleddata.com",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[31.5, 15.3], [32.5, 15.2], [33.0, 15.5], [33.5, 16.0], [33.2, 16.8], [32.0, 17.0], [31.0, 16.5], [30.8, 15.8], [31.5, 15.3]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si-myanmar-001",
+        "name": "Myanmar — Military Airstrike Zones",
+        "kind": "strike_indicators",
+        "region": "Southeast Asia",
+        "severity": 5,
+        "note": "Tatmadaw conducts near-daily airstrikes against civilian populations and resistance strongholds. Russian-supplied Yak-130s and Chinese-origin drones used. Northern Shan State and Sagaing/Chin States most heavily targeted. UN Special Rapporteur confirms pattern of deliberate civilian strikes. 3+ million displaced.",
+        "source": "ACLED / UN Special Rapporteur / Data for Myanmar",
+        "source_url": "https://acleddata.com",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[93.5, 20.0], [96.0, 19.5], [98.5, 20.5], [100.0, 22.0], [100.5, 24.0], [99.0, 26.5], [96.5, 27.0], [94.0, 26.5], [92.5, 24.0], [92.5, 21.5], [93.5, 20.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si-ethiopia-tigray-001",
+        "name": "Ethiopia — Drone Strike Zone (Tigray/Amhara)",
+        "kind": "strike_indicators",
+        "region": "Africa",
+        "severity": 4,
+        "note": "Ethiopian federal forces used armed drones (incl. Turkish Bayraktar TB2 and Chinese Wing Loong II) extensively during Tigray war and subsequent Amhara operations. Drone strikes on Mekelle market (June 2021), Tigray fairs, and Amhara urban centers. Lethal Ethiopian drone campaign considered a template for African state use of armed drones.",
+        "source": "ACLED / Airwaves / Ethiopia HR Commission / HRW",
+        "source_url": "https://acleddata.com",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[37.0, 11.5], [38.8, 11.2], [40.5, 12.0], [41.5, 13.5], [40.5, 14.5], [38.5, 14.5], [37.0, 13.5], [36.5, 12.5], [37.0, 11.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si-n-israel-lebanon-001",
+        "name": "Northern Israel / Lebanese Border — Cross-Border Exchange Zone",
+        "kind": "strike_indicators",
+        "region": "Middle East",
+        "severity": 4,
+        "note": "Hezbollah rocket/drone campaign on northern Israel began Oct 8 2023. 60,000 Israelis evacuated from border towns. Israel counter-strikes on south Lebanon. Escalation peak Sept-Oct 2024: IDF ground incursion. Nov 26 2024 ceasefire partially holds but both sides allege violations. Regular exchange continues at lower intensity.",
+        "source": "ACLED / Airwaves / IDF / UNIFIL",
+        "source_url": "https://acleddata.com",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[35.0, 33.0], [35.7, 33.05], [36.0, 33.2], [36.0, 33.5], [35.5, 33.5], [35.0, 33.4], [34.8, 33.2], [35.0, 33.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si-houthi-launch-001",
+        "name": "Houthi Launch Zone — Red Sea / Arabian Sea Corridor",
+        "kind": "strike_indicators",
+        "region": "Middle East",
+        "severity": 5,
+        "note": "Houthi forces have launched 300+ anti-ship ballistic missiles, cruise missiles, and armed drones from western Yemen since Nov 2023 targeting commercial and military shipping in Red Sea. Ballistic missiles also strike Israel (Tel Aviv area). Operations ongoing despite US/UK interdiction campaign Operation Poseidon Archer. Represents first sustained ASBM campaign in history.",
+        "source": "CENTCOM / Airwaves / UKMTO / Houthi Military Media",
+        "source_url": "https://www.centcom.mil",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[42.0, 12.5], [43.5, 12.0], [45.0, 12.5], [45.5, 14.0], [44.5, 15.0], [43.0, 15.5], [41.5, 14.5], [41.5, 13.5], [42.0, 12.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si-iran-nuclear-sites-001",
+        "name": "Iran — Nuclear and Military Infrastructure Strike Zone",
+        "kind": "strike_indicators",
+        "region": "Middle East",
+        "severity": 5,
+        "note": "US B-2 Spirit stealth bombers and IDF F-35I Adir executing precision strikes on Iranian nuclear and military infrastructure from Feb 28 2026. Primary targets: Natanz NFEP (centrifuge halls), Fordow FFEP (buried 80m), Isfahan ENTC (UF6 production), Arak IR-40 reactor, Khondab heavy water plant. Secondary: IRGC Aerospace Force missile production and launch facilities in Parchin and Imam Ali Base. BLU-113 bunker-buster munitions documented. CENTCOM press releases confirm multiple strike packages.",
+        "source": "CENTCOM / IDF Spokesperson / AP / Reuters / NYT",
+        "source_url": "https://www.centcom.mil",
+        "updated_at": "2026-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[49.0, 32.5], [52.5, 32.5], [52.5, 35.2], [50.5, 35.5], [49.0, 35.0], [48.5, 34.0], [49.0, 32.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si-israel-incoming-001",
+        "name": "Israel — Incoming Missile Strike Zone",
+        "kind": "strike_indicators",
+        "region": "Middle East",
+        "severity": 5,
+        "note": "Israel receiving sustained ballistic missile and drone attack from multiple simultaneous vectors: Iranian Shahab-3, Emad and Fattah-1 ballistic missiles from Iran directly; Houthi cruise missiles and ballistic missiles from Yemen; Hezbollah rocket and guided anti-tank missile fire from Lebanon. IDF Iron Dome, David's Sling and Arrow-3 systems at maximum operational tempo. IDF Southern and Northern Command both on wartime alert. Civilian population in bomb shelters nationwide.",
+        "source": "IDF Spokesperson / Times of Israel / CENTCOM / Haaretz",
+        "source_url": "https://www.idf.il",
+        "updated_at": "2026-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[34.2, 29.5], [35.9, 29.5], [36.0, 31.5], [35.5, 32.5], [35.1, 33.4], [34.2, 33.2], [34.2, 31.5], [34.2, 29.5]]]
+      }
+    }
+  ]
+}

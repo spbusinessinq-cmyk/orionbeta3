@@ -1,0 +1,77 @@
+You are continuing development on the deployed OSINT platform RSR O.R.I.O.N. The OSINT relevance filter, category classifier, confidence score, time filter, and zoom-based clustering are now working. Do NOT undo any of those systems.
+
+Current state:
+- Non-relevant articles are filtered out correctly
+- Event category and confidence are displayed
+- Time filters (1H / 6H / 24H / 7D / ALL) work
+- Zoom-based clustering works
+- At zoom < 3, country-level clusters render
+- At zoom >= 3, individual pins render
+- Glass HUD UI system is already implemented and should remain intact
+
+Now do a focused UI / map refinement pass only.
+
+GOALS:
+
+1. Refine cluster marker design
+The current cluster bubbles are too large and too dominant visually.
+Make them feel like O.R.I.O.N. intelligence markers, not arcade counters.
+
+Requirements:
+- Smaller overall radius
+- Dark glass / tactical style base
+- Thin colored outer ring by dominant tier
+- Inner number in mono font
+- Subtle glow, not cartoon glow
+- Breaking clusters = red ring
+- Watch clusters = amber ring
+- Verified clusters = teal/green ring
+- Add soft pulse only for clusters with count >= 25
+- Remove any oversized loud halo effect
+
+2. Improve individual pin hierarchy
+Pins should feel more distinct by tier.
+Requirements:
+- Breaking pins: strongest pulse / brightest presence
+- Watch pins: tighter ring, controlled amber pulse
+- Verified pins: premium teal/green with cleaner halo
+- Country-level pins should remain secondary but still readable
+- Maintain tactical beacon aesthetic
+- Do not change polygon overlay styles in this pass
+
+3. Clean up left-side HUD spacing
+The left HUD still feels cramped.
+Refine:
+- Stats panel spacing
+- Escalations panel spacing
+- Intel layers panel spacing
+- Tier legend spacing
+Make the stack breathe more vertically without eating the map.
+Use consistent panel padding, title spacing, and row spacing.
+
+4. Improve event detail readability
+Without redesigning the whole panel, tighten hierarchy:
+- Headline should be stronger
+- Category badge and confidence badge should sit cleanly near the top
+- Threat score card should be clearer
+- Intel context and fusion signals should be easier to scan
+- Reduce visual clutter from too many equally-weighted boxes
+
+5. Preserve current architecture
+Do NOT break:
+- category classifier
+- relevance filter
+- confidence scoring
+- time filter
+- clustering behavior
+- glass HUD system
+- deployed build
+
+DELIVERABLE:
+Make the UI feel more like a premium intelligence terminal:
+clean, tactical, modern, readable, less busy, more “O.R.I.O.N.”
+
+After changes:
+- restart / validate
+- summarize exactly what changed
+- confirm nothing from the current intelligence pipeline was broken

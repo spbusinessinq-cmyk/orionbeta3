@@ -1,0 +1,79 @@
+You are continuing development on the deployed OSINT platform RSR O.R.I.O.N. The backend pipeline is stable and should not be changed in this pass. This is a visual system refinement pass only.
+
+Current state:
+- map engine works
+- OSINT relevance filter works
+- category classifier works
+- confidence scoring works
+- time filters work
+- clustering works
+- overlays work
+- glass HUD system works
+
+The UI is stronger now, but it is still too red-dominant and reads more like an alert skin than a premium intelligence terminal.
+
+OBJECTIVE:
+Rebalance the visual identity so O.R.I.O.N. feels like a serious black-glass command system with disciplined status colors.
+
+VISUAL DIRECTION:
+- keep black / dark graphite base
+- use teal / green for system state and “online” status
+- use amber for watch / caution / attention
+- use red only for actual threat, critical, destructive action, escalation, ingest command, or selected danger state
+- use gray / white for structure, labels, separators, neutral controls
+
+TASKS:
+
+1. Rebalance color usage across the UI
+- reduce unnecessary red borders and red accents
+- replace many generic red panel accents with neutral glass or faint teal accents
+- preserve red only where danger / breaking / critical / escalation is intended
+
+2. Refine brand hierarchy
+- make it clearer that O.R.I.O.N. is a system under the RSR umbrella
+- improve top-left brand hierarchy so it reads like:
+  RSR // O.R.I.O.N.
+  with the full system subtitle below
+- optionally add a small mono descriptor such as:
+  “An RSR Systems Project”
+  if it fits cleanly
+
+3. Improve command bar / header feel
+- preserve the current command strip layout
+- make it feel colder, cleaner, more tactical
+- “system online” should visually belong to teal / green
+- keep ingest as a deliberate red command action
+- reduce red use in the non-danger parts of the top bar
+
+4. Refine panel module styling
+- left and right panels should feel like system modules, not stacked cards
+- cleaner internal separators
+- less heavy border glow
+- better module titles
+- less visual weight on inactive controls
+
+5. Refine feed styling
+- selected / dangerous feed items can keep red emphasis
+- non-selected rows should be quieter and more neutral
+- metadata should be cleaner and easier to scan
+- category / confidence / tier should carry meaning without every row needing loud red structure
+
+6. Preserve current architecture
+Do NOT break:
+- map rendering
+- clustering
+- overlays
+- event details
+- time filters
+- classifier / relevance filter / confidence scoring
+- deployment
+
+DELIVERABLE:
+Make the interface feel more like a premium intelligence terminal:
+black, tactical, restrained, systemic, readable, unmistakably O.R.I.O.N.
+
+After changes:
+- restart / validate
+- summarize exact UI changes
+- explain the new color logic
+- confirm no backend pipeline systems were touched

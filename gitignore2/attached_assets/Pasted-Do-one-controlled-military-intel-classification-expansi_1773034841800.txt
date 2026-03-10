@@ -1,0 +1,180 @@
+Do one controlled military-intel + classification expansion pass with exactly 5 tasks.
+
+IMPORTANT RULES
+- Do not redesign the app
+- Do not change O.R.I.O.N. branding
+- Do not touch Replit runtime setup
+- Do not touch Prisma/Replit DB setup
+- Do not break the current UI layout
+- Do not do rollback-style edits
+- Keep all edits surgical
+- Preserve the current working map, feed, and intel layers
+- Do not remove any existing layer
+- Keep all new intelligence features honest and source-grounded
+
+CURRENT STATE
+- Feed volume has improved but still needs to go materially higher
+- Watch and Verified are alive, but still too low
+- Breaking is still too dominant
+- This suggests both source volume and classification / clustering rules still need tuning
+- Protest / Unrest and Internet Shutdown are already in
+- Next priority is:
+  1. more feed volume
+  2. better tier distribution
+  3. military activity layer
+  4. strike / launch indicators
+  5. fusion logic v2
+
+TASK 1 — FEED VOLUME EXPANSION v2
+Increase total feed volume carefully and materially.
+
+Inspect:
+- src/app/api/rss/route.ts
+- feed source lists
+- allowlists
+- raw article caps
+- dedupe controls
+- location extraction yield
+- debug logging already present
+
+Do this exactly:
+1. Add more high-yield geopolitical and conflict-relevant sources
+2. Prefer location-rich and globally relevant feeds
+3. Keep source quality high
+4. Avoid junk / clickbait / soft-news feeds
+5. Preserve clustering stability
+6. Improve feed volume without flooding the map with garbage
+7. Raise raw article ceiling if justified
+8. Report which sources are actually contributing vs not contributing
+
+At the end report:
+- source count before/after
+- raw articles before/after if available
+- deduped articles before/after if available
+- total feed events before/after if available
+
+TASK 2 — CLASSIFICATION / TIER AUDIT AND TUNING
+Audit why too many events are still ending up as Breaking instead of Watch or Verified.
+
+Inspect:
+- src/lib/news-store.ts
+- any clustering / similarity / merge code
+- any sourceCount logic
+- any fallback merge logic
+- any exact-match vs fuzzy-match logic
+- any country/region matching rules
+- any thresholds/time windows/entity rules currently in use
+
+Do this exactly:
+1. Audit the current criteria for:
+   - Breaking
+   - Watch
+   - Verified
+2. Identify what is still too strict
+3. Identify where same-story articles are failing to merge
+4. Improve classification so legitimate same-event stories merge more often
+5. Increase Watch and Verified counts in a controlled and honest way
+6. Do NOT create fake merges
+7. Do NOT merge unrelated diplomatic commentary with active combat reports unless the event signature clearly matches
+8. Preserve explainability
+
+Goal:
+- Breaking should still be the largest bucket
+- Watch should become meaningfully populated
+- Verified should become clearly present
+- Total event quality should remain credible
+
+At the end report:
+- exact tier counts before/after if available
+- the specific threshold / rule changes made
+- a few sample accepted vs rejected merge/debug lines if available
+
+TASK 3 — IMPLEMENT MILITARY ACTIVITY LAYER
+Create a new intel layer for publicly observable military activity.
+
+Do this exactly:
+1. Create a military_activity GeoJSON intel layer
+2. Add it to the manifest
+3. Add it to WorldMap rendering
+4. Add it to intel-fusion if needed
+5. Add it to page.tsx state + controls
+6. Add it to the "/" command palette
+7. Add it to the Intel Layers HUD
+8. Add keyboard shortcut if appropriate
+9. Style it distinctly from conflict_zones, protest_unrest, and internet_shutdown
+10. Keep it tactical, restrained, and readable
+
+This layer should represent:
+- active military operating regions
+- sortie / patrol / force-posture zones
+- high-interest operational areas
+- public military activity indicators
+
+Do NOT pretend this is live secret tracking.
+Keep it clearly source-grounded and conservative.
+
+TASK 4 — IMPLEMENT STRIKE / LAUNCH INDICATOR LAYER
+Create a second new layer for publicly defensible strike / launch indicators.
+
+Do this exactly:
+1. Create a strike_indicators GeoJSON intel layer
+2. Add it to the manifest
+3. Add it to WorldMap rendering
+4. Add it to intel-fusion if needed
+5. Add it to page.tsx state + controls
+6. Add it to the "/" command palette
+7. Add it to the Intel Layers HUD
+8. Add keyboard shortcut if appropriate
+9. Keep the styling distinct from military_activity
+10. Make it feel like launch/impact/strike-risk signaling, not fantasy missile telemetry
+
+This layer may represent:
+- launch-risk areas
+- strike corridors
+- confirmed strike-heavy operational zones
+- thermal / impact / attack-prone regions if publicly defensible
+
+Do NOT claim real-time missile path tracking.
+Keep it honest and conservative.
+
+TASK 5 — FUSION LOGIC v2
+Add the next conservative fusion pass using the new layers.
+
+Goal:
+Make O.R.I.O.N. feel more like a real intelligence monitor.
+
+Add conservative fusion signals such as:
+- military_activity + restricted_airspace
+- military_activity + conflict_zone
+- strike_indicators + conflict_zone
+- strike_indicators + internet_shutdown
+- protest_unrest + internet_shutdown
+- maritime_zone + military_activity
+- sanctions + military_activity if justified
+
+Rules:
+- Do not over-trigger
+- Do not invent intelligence
+- Only fire when the overlap is defensible
+- Keep it explainable in the details panel
+- Keep the system readable
+
+IMPORTANT SAFETY RULES
+- Do not break the current map
+- Do not break the command palette
+- Do not break feed rendering
+- Do not break current intel toggles
+- Do not change marker family unless absolutely required
+- Do not move UI panels unless required for the new layer list
+
+OUTPUT REQUIREMENTS
+At the end return:
+1. root cause / improvement summary
+2. files changed
+3. summary of feed volume expansion
+4. summary of classification / tier tuning
+5. summary of military_activity implementation
+6. summary of strike_indicators implementation
+7. summary of fusion logic added
+8. exact tier counts before/after if available
+9. unified diffs only

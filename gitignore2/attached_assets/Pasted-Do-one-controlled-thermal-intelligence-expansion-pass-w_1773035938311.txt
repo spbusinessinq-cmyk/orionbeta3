@@ -1,0 +1,141 @@
+Do one controlled thermal-intelligence expansion pass with exactly 4 tasks.
+
+IMPORTANT RULES
+- Do not redesign the app
+- Do not change O.R.I.O.N. branding
+- Do not touch Replit runtime setup
+- Do not touch Prisma/Replit DB setup
+- Do not break the current UI layout
+- Do not do rollback-style edits
+- Keep all edits surgical
+- Preserve the current working map, feed, fusion rules, and intel layers
+- Do not remove any existing layer
+- Keep all new intelligence features honest and source-grounded
+- Do not claim real-time missile path tracking
+
+CURRENT CONTEXT
+We now have a live Iran war context in public reporting that should influence filter accuracy:
+- large-scale U.S./Israeli strikes on Iranian territory beginning Feb 28, 2026
+- Iranian retaliation across the region
+- major airspace closures / high-risk FIR conditions
+- severe Iran internet blackout / connectivity collapse
+- continuing PLA/Taiwan activity in East Asia as a separate military lane
+
+Build the next pass around that reality.
+
+TASK 1 — IRAN WAR FILTER ACCURACY PASS
+Audit and improve the current event/intel matching logic so the Iran war is categorized more accurately.
+
+Inspect:
+- src/lib/news-store.ts
+- src/app/api/rss/route.ts
+- src/lib/intel-fusion.ts
+- any event signature / clustering / country/entity/action logic
+- any intel matching rules for:
+  - conflict_zones
+  - restricted_airspace
+  - internet_shutdown
+  - military_activity
+  - strike_indicators
+  - maritime_zones
+
+Do this exactly:
+1. Improve matching around the current Iran war context
+2. Make sure stories involving:
+   - Iran
+   - Israel
+   - U.S.
+   - retaliatory strikes
+   - airspace closure
+   - Gulf / shipping / Hormuz spillover
+   - internet blackout
+   cluster and fuse more intelligently
+3. Keep Taiwan / PLA military activity separate unless a story is actually about both theaters
+4. Do not create fake merges
+5. Do not over-fuse commentary with actual combat reporting unless the event signature is strong
+6. Keep the system explainable
+
+TASK 2 — IMPLEMENT THERMAL ANOMALIES LAYER
+Add a new intelligence layer:
+
+thermal_anomalies
+
+This represents publicly available satellite-detected heat signatures from fires/explosions.
+
+Do this exactly:
+1. Create a thermal_anomalies GeoJSON intel layer or data ingestion pipeline
+2. Add it to the manifest
+3. Add it to WorldMap rendering
+4. Add it to page.tsx state + controls
+5. Add it to the "/" command palette
+6. Add it to the Intel Layers HUD
+7. Add keyboard shortcut if appropriate
+8. Keep the implementation honest and conservative
+
+Source concept:
+Use publicly available NASA FIRMS-style thermal anomaly data.
+
+This layer may represent:
+- large fires
+- strike aftermath
+- explosions
+- industrial or infrastructure fires
+- high-heat combat-adjacent signatures
+
+Do NOT present this as live missile tracking.
+Do NOT imply secret or direct missile telemetry.
+
+TASK 3 — THERMAL FILTERING / PERFORMANCE PASS
+Make the thermal layer useful, not noisy.
+
+Do this exactly:
+1. Filter aggressively so the map does not become a wildfire map
+2. Prefer anomalies that are:
+   - recent
+   - higher-confidence
+   - near conflict_zones
+   - near military_activity
+   - near strike_indicators
+   - near maritime_zones when relevant
+3. Limit the number of anomalies rendered at once
+4. Preserve map readability
+5. Keep performance stable
+
+TASK 4 — THERMAL FUSION LOGIC
+Add conservative fusion rules for thermal anomalies.
+
+Examples:
+- conflict_zone + thermal_anomaly
+  -> POSSIBLE STRIKE ACTIVITY
+- military_activity + thermal_anomaly
+  -> MILITARY STRIKE ACTIVITY
+- maritime_zone + thermal_anomaly
+  -> POSSIBLE SHIP / PORT INCIDENT
+- internet_shutdown + thermal_anomaly
+  -> STRIKE / BLACKOUT CORRELATION
+- strike_indicators + thermal_anomaly
+  -> ACTIVE STRIKE SIGNATURE
+
+Rules:
+- only trigger on defensible spatial proximity
+- do not over-trigger
+- do not invent intelligence
+- keep it explainable in the details panel
+
+IMPORTANT SAFETY RULES
+- Do not break the current map
+- Do not break the command palette
+- Do not break feed rendering
+- Do not break current intel toggles
+- Do not change marker family unless absolutely required
+- Do not move UI panels unless required for the new layer list
+
+OUTPUT REQUIREMENTS
+At the end return:
+1. root cause / improvement summary
+2. files changed
+3. summary of Iran-war filter accuracy upgrades
+4. summary of thermal_anomalies implementation
+5. summary of thermal filtering/performance controls
+6. summary of fusion logic added
+7. unified diffs only

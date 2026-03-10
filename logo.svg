@@ -1,0 +1,167 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sc-russia-001",
+        "name": "Russia Comprehensive Sanctions",
+        "kind": "sanctions",
+        "region": "Eastern Europe",
+        "severity": 5,
+        "note": "Comprehensive US/EU sanctions following Ukraine invasion. Energy, finance, technology sectors.",
+        "source": "OFAC Russia-Related Sanctions",
+        "source_url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russia-related-sanctions",
+        "updated_at": "2025-02-25T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[28.0, 43.0], [32.0, 42.5], [40.0, 43.5], [50.0, 45.0], [60.0, 48.0], [80.0, 50.0], [100.0, 52.0], [120.0, 55.0], [140.0, 58.0], [170.0, 62.0], [180.0, 68.0], [175.0, 72.0], [150.0, 76.0], [120.0, 78.0], [80.0, 79.0], [50.0, 77.0], [35.0, 72.0], [28.0, 65.0], [25.0, 55.0], [26.0, 48.0], [28.0, 43.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sc-iran-001",
+        "name": "Iran Comprehensive Sanctions",
+        "kind": "sanctions",
+        "region": "Middle East",
+        "severity": 5,
+        "note": "Comprehensive US sanctions on oil, banking, and military sectors. Secondary sanctions apply.",
+        "source": "OFAC Iran Sanctions",
+        "source_url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
+        "updated_at": "2025-02-25T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[44.2, 25.2], [46.0, 25.0], [48.5, 25.8], [52.0, 27.5], [56.0, 29.0], [60.5, 30.5], [63.5, 32.5], [63.8, 35.0], [62.0, 37.0], [59.0, 38.5], [55.0, 39.5], [51.0, 39.8], [47.5, 39.2], [45.5, 38.0], [44.5, 36.0], [44.0, 33.0], [44.0, 28.0], [44.2, 25.2]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sc-nkorea-001",
+        "name": "North Korea Sanctions",
+        "kind": "sanctions",
+        "region": "East Asia",
+        "severity": 5,
+        "note": "UN Security Council sanctions plus US/EU measures. Nuclear and missile program restrictions.",
+        "source": "OFAC North Korea Sanctions",
+        "source_url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/north-korea-sanctions",
+        "updated_at": "2025-02-25T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[124.2, 37.8], [125.5, 37.6], [127.5, 38.0], [129.5, 39.0], [130.5, 40.5], [130.8, 42.0], [130.3, 43.0], [129.0, 43.2], [127.5, 42.8], [126.0, 41.5], [124.8, 40.0], [124.2, 38.8], [124.2, 37.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sc-syria-001",
+        "name": "Syria Sanctions",
+        "kind": "sanctions",
+        "region": "Middle East",
+        "severity": 5,
+        "note": "Comprehensive US/EU sanctions. Caesar Syria Civilian Protection Act.",
+        "source": "OFAC Syria Sanctions",
+        "source_url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/syria-sanctions",
+        "updated_at": "2025-02-25T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[35.8, 32.5], [37.0, 32.4], [39.0, 33.0], [40.5, 34.0], [42.0, 35.0], [42.3, 36.0], [42.0, 37.0], [41.0, 37.3], [39.0, 36.8], [37.0, 36.3], [36.0, 35.5], [35.6, 34.0], [35.6, 33.2], [35.8, 32.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sc-belarus-001",
+        "name": "Belarus Sanctions",
+        "kind": "sanctions",
+        "region": "Eastern Europe",
+        "severity": 4,
+        "note": "EU and US sanctions. Linked to Ukraine war support and human rights violations.",
+        "source": "OFAC Belarus Sanctions",
+        "source_url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/belarus-sanctions",
+        "updated_at": "2025-02-25T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[23.2, 51.3], [25.0, 51.0], [28.0, 51.5], [30.5, 52.0], [32.2, 53.0], [32.0, 54.5], [30.5, 55.5], [28.0, 56.0], [25.5, 55.8], [23.5, 55.0], [23.0, 53.5], [23.2, 52.0], [23.2, 51.3]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sc-cuba-001",
+        "name": "Cuba Sanctions",
+        "kind": "sanctions",
+        "region": "Caribbean",
+        "severity": 3,
+        "note": "Long-standing US embargo. Comprehensive trade and financial restrictions.",
+        "source": "OFAC Cuba Sanctions",
+        "source_url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/cuba-sanctions",
+        "updated_at": "2025-02-25T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-84.8, 19.8], [-83.5, 19.7], [-82.0, 20.0], [-80.5, 20.8], [-77.5, 21.5], [-75.5, 22.0], [-74.2, 22.0], [-74.5, 21.0], [-77.0, 20.5], [-80.0, 20.2], [-82.5, 19.8], [-84.5, 19.6], [-84.8, 19.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sc-crimea-001",
+        "name": "Crimea/Donbas Sanctions",
+        "kind": "sanctions",
+        "region": "Eastern Europe",
+        "severity": 5,
+        "note": "US/EU sanctions on Crimea, Donetsk, and Luhansk regions. Trade and investment prohibited.",
+        "source": "OFAC Ukraine-Related Sanctions",
+        "source_url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/ukraine-russia-related-sanctions",
+        "updated_at": "2025-02-25T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[33.5, 44.8], [34.5, 44.8], [35.5, 45.2], [36.5, 45.8], [37.5, 47.0], [38.5, 48.2], [39.2, 49.0], [39.8, 50.2], [39.5, 50.8], [38.8, 50.5], [37.5, 49.8], [36.5, 48.5], [35.5, 47.5], [34.5, 47.0], [33.8, 46.0], [33.4, 45.5], [33.5, 44.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sc-venezuela-001",
+        "name": "Venezuela Sanctions",
+        "kind": "sanctions",
+        "region": "South America",
+        "severity": 4,
+        "note": "US sanctions on PDVSA and government officials. Oil sector primary target.",
+        "source": "OFAC Venezuela-Related Sanctions",
+        "source_url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/venezuela-related-sanctions",
+        "updated_at": "2025-02-25T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-73.2, 1.0], [-71.5, 0.8], [-68.5, 1.5], [-65.0, 3.0], [-62.5, 5.0], [-61.5, 7.5], [-61.0, 9.5], [-60.5, 11.0], [-61.5, 12.0], [-63.5, 12.2], [-66.5, 11.0], [-70.0, 10.0], [-72.5, 9.0], [-73.5, 7.5], [-73.8, 5.0], [-73.5, 3.0], [-73.2, 1.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sc-myanmar-001",
+        "name": "Myanmar Sanctions",
+        "kind": "sanctions",
+        "region": "Southeast Asia",
+        "severity": 3,
+        "note": "Western sanctions on military junta. Arms embargo.",
+        "source": "OFAC Burma Sanctions",
+        "source_url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/burma-sanctions",
+        "updated_at": "2025-02-25T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[92.5, 10.0], [94.0, 9.8], [96.5, 10.5], [99.0, 12.0], [100.5, 14.5], [101.2, 17.5], [101.0, 20.0], [99.5, 22.5], [97.5, 25.0], [95.0, 27.0], [93.0, 27.5], [92.2, 25.5], [92.0, 22.0], [92.5, 18.5], [93.0, 15.0], [92.5, 12.0], [92.5, 10.0]]]
+      }
+    }
+  ]
+}

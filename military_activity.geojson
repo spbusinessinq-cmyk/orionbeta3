@@ -1,0 +1,203 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "is-myanmar-001",
+        "name": "Myanmar — Nationwide Shutdown Zone",
+        "kind": "internet_shutdown",
+        "region": "Southeast Asia",
+        "severity": 5,
+        "note": "Military junta imposed near-total internet shutdowns since Feb 2021 coup. Townships in Sagaing, Mandalay, Chin, Karen under extended blackout. Mobile internet suspended in active combat areas. Fiber cables cut by both sides.",
+        "source": "NetBlocks / Access Now #KeepItOn",
+        "source_url": "https://netblocks.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[92.5, 10.2], [94.5, 9.8], [97.0, 10.8], [99.5, 12.2], [100.8, 14.8], [101.2, 17.8], [101.0, 20.2], [99.5, 22.8], [97.5, 25.2], [95.0, 27.2], [93.0, 27.8], [92.2, 25.8], [92.0, 22.2], [92.5, 18.8], [93.0, 15.2], [92.5, 12.2], [92.5, 10.2]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "is-iran-001",
+        "name": "Iran — Nationwide Information Controls",
+        "kind": "internet_shutdown",
+        "region": "Middle East",
+        "severity": 5,
+        "note": "Persistent deep-packet inspection, VPN blocking, and repeated total shutdowns during protest surges. Social media platforms (Instagram, WhatsApp, Twitter/X) blocked. Mahsa Amini protests triggered multi-day national blackout. IRGC operates domestic network choke points.",
+        "source": "NetBlocks / OONI / Access Now",
+        "source_url": "https://netblocks.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[44.0, 25.0], [46.5, 24.8], [49.5, 25.8], [53.0, 27.2], [57.0, 29.0], [61.0, 30.8], [63.8, 32.5], [64.0, 35.2], [62.2, 37.2], [59.0, 38.8], [55.2, 39.8], [51.5, 40.0], [48.0, 39.5], [45.8, 38.2], [44.5, 36.0], [44.0, 33.0], [44.0, 25.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "is-russia-001",
+        "name": "Russia — Wartime Information Controls",
+        "kind": "internet_shutdown",
+        "region": "Eastern Europe",
+        "severity": 4,
+        "note": "Post-invasion censorship: Facebook/Instagram/Twitter blocked. VPN usage surged. 'Fake news' law criminalizes reporting. RuNet isolation project advancing. Regional disruptions near Ukraine border during strikes. State owns all major ISPs.",
+        "source": "NetBlocks / OONI / Roskomnadzor Watch",
+        "source_url": "https://netblocks.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[30.0, 46.5], [36.0, 45.5], [42.0, 46.0], [50.0, 48.0], [58.0, 51.0], [60.0, 56.5], [58.0, 62.0], [50.0, 66.0], [40.0, 68.5], [32.0, 68.0], [28.0, 62.5], [28.5, 56.0], [30.0, 51.0], [30.0, 46.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "is-sudan-001",
+        "name": "Sudan — Conflict-Driven Internet Blackout",
+        "kind": "internet_shutdown",
+        "region": "Africa",
+        "severity": 5,
+        "note": "Internet shut down at start of conflict April 2023. Multiple blackout periods since. Khartoum data centers damaged. Only partial mobile connectivity intermittently restored in some regions. RSF controls fiber infrastructure in western zones.",
+        "source": "NetBlocks / Access Now",
+        "source_url": "https://netblocks.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[24.0, 13.0], [27.0, 12.5], [30.5, 13.0], [34.0, 13.5], [36.5, 15.0], [38.0, 17.5], [37.5, 20.5], [35.0, 21.5], [31.0, 22.0], [28.0, 21.0], [25.5, 19.5], [23.5, 17.0], [23.0, 15.0], [24.0, 13.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "is-ethiopia-001",
+        "name": "Ethiopia — Tigray / Amhara / Oromia Shutdowns",
+        "kind": "internet_shutdown",
+        "region": "Africa",
+        "severity": 4,
+        "note": "Internet and phone networks cut in Tigray for extended periods during the 2020-2022 war. Subsequent shutdowns in Amhara (2023-2024 conflict) and Oromia. World's longest internet shutdown recorded in Tigray (nearly 2 years). Partial restoration but ongoing disruptions.",
+        "source": "NetBlocks / Access Now / Amnesty International",
+        "source_url": "https://netblocks.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[34.8, 3.5], [37.5, 3.2], [40.5, 4.0], [43.0, 5.5], [44.5, 7.5], [44.5, 9.5], [42.5, 11.5], [40.0, 12.5], [37.5, 12.5], [35.5, 11.5], [33.5, 10.0], [33.5, 7.5], [34.0, 5.5], [34.8, 3.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "is-cuba-001",
+        "name": "Cuba — Protest-Triggered Shutdowns",
+        "kind": "internet_shutdown",
+        "region": "Caribbean",
+        "severity": 4,
+        "note": "State-controlled ETECSA monopoly. Internet cut during July 2021 and March/September 2024 protests. Social media throttling persistent. VPN use heavily criminalized. Mobile-only population most affected by targeted blackouts.",
+        "source": "NetBlocks / Access Now",
+        "source_url": "https://netblocks.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-84.8, 19.8], [-83.0, 19.6], [-80.5, 20.5], [-77.5, 21.5], [-74.5, 22.2], [-74.2, 22.8], [-76.0, 22.8], [-79.0, 22.5], [-82.0, 22.0], [-84.5, 22.0], [-85.0, 21.0], [-84.8, 19.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "is-belarus-001",
+        "name": "Belarus — Systematic Internet Restrictions",
+        "kind": "internet_shutdown",
+        "region": "Eastern Europe",
+        "severity": 4,
+        "note": "Mass shutdowns during 2020 Lukashenko post-election protests. Repeated throttling episodes since. Telegram, VPNs, and news sites blocked. Internet speed reductions deployed at protest flashpoints. Close coordination with Russian surveillance systems.",
+        "source": "NetBlocks / OONI",
+        "source_url": "https://netblocks.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[23.2, 51.3], [25.5, 51.0], [28.0, 51.5], [30.5, 52.0], [32.5, 53.0], [32.2, 54.8], [30.5, 55.5], [27.5, 56.0], [25.0, 55.8], [23.5, 55.0], [23.0, 53.5], [23.2, 52.0], [23.2, 51.3]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "is-china-xinjiang-001",
+        "name": "China — Xinjiang Total Network Restriction",
+        "kind": "internet_shutdown",
+        "region": "East Asia",
+        "severity": 5,
+        "note": "Xinjiang had internet completely cut for 312 days following 2009 Urumqi riots. Persistent heavy restrictions since. 'Safe Xinjiang' surveillance grid includes AI-enabled monitoring and network-level blocking of all foreign platforms. Tibet similarly restricted.",
+        "source": "OONI / Human Rights Watch / Freedom House",
+        "source_url": "https://ooni.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[73.5, 35.5], [76.0, 34.8], [79.0, 35.5], [83.0, 36.5], [87.5, 37.5], [91.5, 40.0], [93.0, 43.5], [91.0, 47.5], [87.5, 48.5], [83.0, 47.5], [78.5, 45.0], [75.0, 42.5], [73.0, 39.0], [72.5, 36.5], [73.5, 35.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "is-nkorea-001",
+        "name": "North Korea — Complete Digital Isolation",
+        "kind": "internet_shutdown",
+        "region": "East Asia",
+        "severity": 5,
+        "note": "No public internet access. Citizens access only the domestic Kwangmyong intranet. External connectivity restricted to state actors and elite. Worst digital rights situation in the world (Freedom House 2024). Defectors describe zero civilian connectivity to global internet.",
+        "source": "Freedom House / Access Now",
+        "source_url": "https://freedomhouse.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[124.2, 37.8], [125.8, 37.5], [128.0, 38.0], [130.0, 39.0], [130.8, 40.5], [130.8, 42.5], [130.2, 43.5], [129.0, 43.5], [127.5, 43.0], [126.0, 41.8], [124.8, 40.5], [124.2, 39.0], [124.2, 37.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "is-pakistan-001",
+        "name": "Pakistan — PTI Crackdown Shutdown Zone",
+        "kind": "internet_shutdown",
+        "region": "South Asia",
+        "severity": 3,
+        "note": "Social media platforms throttled during PTI long marches and protests. Twitter/X blocked for weeks at a time. Mobile internet cut in Islamabad, Rawalpindi, Lahore during demonstrations. VPN use surged 200%+ during 2023-2024 PTI events.",
+        "source": "NetBlocks / Access Now",
+        "source_url": "https://netblocks.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[70.5, 29.8], [72.8, 29.2], [74.5, 30.2], [75.0, 32.0], [73.8, 34.0], [72.2, 34.5], [70.5, 33.8], [69.5, 32.0], [70.0, 31.0], [70.5, 29.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "is-bangladesh-001",
+        "name": "Bangladesh — Revolution-Era Shutdown",
+        "kind": "internet_shutdown",
+        "region": "South Asia",
+        "severity": 4,
+        "note": "Total internet shutdown imposed July 19-23 2024 during student protests that toppled PM Hasina. Longest complete blackout in Bangladesh's history. Mobile internet suspended first, followed by broadband. VPN traffic collapsed. Restoration occurred in stages as Yunus took over.",
+        "source": "NetBlocks / Access Now",
+        "source_url": "https://netblocks.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[88.0, 21.5], [89.8, 21.2], [92.5, 22.0], [92.8, 23.5], [92.5, 25.0], [91.5, 26.0], [90.0, 26.5], [88.5, 26.0], [88.0, 24.5], [88.0, 22.5], [88.0, 21.5]]]
+      }
+    }
+  ]
+}

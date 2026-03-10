@@ -1,0 +1,114 @@
+You are continuing development on the deployed OSINT platform RSR O.R.I.O.N.
+
+The backend pipeline is stable and must NOT be changed in this pass.
+
+Do NOT touch:
+- OSINT relevance filter
+- category classifier
+- confidence scoring
+- threat scoring
+- clustering logic
+- time filters
+- overlay rendering logic
+- deployment config
+- view mode logic beyond layout placement
+
+This pass is a UI layout rebalancing pass only.
+
+CURRENT PROBLEM
+
+The left side of the interface is still carrying too many modules at once:
+- filter / showing bar
+- stats strip
+- escalation watch
+- active overlays
+- high threat events
+
+This makes the left side feel overloaded and causes the side rail tabs (DETAILS / ALERTS) to visually interfere with the module stack.
+
+OBJECTIVE
+
+Rebalance the screen so module placement matches their function and the center map breathes more.
+
+TARGET LAYOUT
+
+LEFT SIDE
+- Showing / filter bar
+- Stats strip
+- Escalation Watch
+
+TOP / UPPER RIGHT
+- Spread control
+- Active Overlays module
+- Intel DB diagnostics
+
+RIGHT SIDE
+- High Threat Events
+- Signal Feed
+
+This should create a cleaner operational hierarchy:
+- left = system status
+- top = controls / diagnostics
+- right = active intelligence flow
+
+TASKS
+
+1. Move High Threat Events out of the left rail
+- remove it from the lower-left stack
+- place it on the right side in a cleaner position near the Signal Feed
+- it may sit directly above the feed or as a compact module between Intel DB and Signal Feed
+- preserve collapsible behavior if already present
+
+2. Move Active Overlays out of the left rail
+- remove it from the lower-left stack
+- place it near the top-right / top-center controls, close to Spread and Intel DB
+- it should feel like a live system control module, not a left-side reference box
+
+3. Simplify the left rail
+After moving those modules, left rail should contain only:
+- filter / showing bar
+- stats strip
+- escalation watch
+This should make the left side cleaner and stop the side tabs from visually crowding the module area.
+
+4. Reduce side-tab interference
+DETAILS and ALERTS side rails should remain, but ensure their visual footprint no longer conflicts with the main module stacks.
+Adjust spacing / offsets if needed.
+
+5. Preserve mode logic
+Operator / Focus / Briefing should still work.
+Re-map module visibility appropriately:
+- Operator = full layout with relocated modules
+- Focus = reduced clutter
+- Briefing = minimal layout
+
+6. Maintain current visual system
+Keep:
+- black / graphite base
+- teal / green for system status
+- amber for watch / caution
+- red only for active threat / ingest / critical
+- glass HUD system
+
+Do not redesign styling from scratch.
+
+7. Preserve map breathing room
+Do not let the new right-side placement choke the map center.
+The center of the map should feel more open after this pass, not more crowded.
+
+DELIVERABLE
+
+After changes:
+- restart / validate
+- summarize exactly how the layout was rebalanced
+- explain where High Threat Events moved
+- explain where Active Overlays moved
+- confirm left rail is simplified
+- confirm Operator / Focus / Briefing still work
+- confirm backend / pipeline systems were untouched
+
+The goal is to make O.R.I.O.N. feel like a real command console with cleaner functional zoning:
+left = status
+top = controls
+right = intelligence
+center = map

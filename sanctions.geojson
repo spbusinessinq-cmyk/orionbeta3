@@ -1,0 +1,185 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ma-kaliningrad-001",
+        "name": "Kaliningrad — Russian Military Enclave",
+        "kind": "military_activity",
+        "region": "Eastern Europe",
+        "severity": 4,
+        "note": "Russian exclave between Poland and Lithuania. Home to Baltic Fleet HQ, 11th Army Corps, ISKANDER-M missiles. Documented buildup post-2022. NATO Article 5 flashpoint. Permanently elevated posture. Hypersonic Kinzhal deployments confirmed 2023.",
+        "source": "IISS / Jane's / Polish MOD / NATO SHAPE",
+        "source_url": "https://www.iiss.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[19.7, 54.3], [20.8, 54.2], [22.0, 54.3], [22.9, 54.5], [23.0, 54.9], [22.5, 55.3], [21.2, 55.3], [20.0, 55.2], [19.7, 54.8], [19.7, 54.3]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ma-nato-efp-001",
+        "name": "NATO Enhanced Forward Presence — Baltic / Suwałki",
+        "kind": "military_activity",
+        "region": "Eastern Europe",
+        "severity": 4,
+        "note": "Four multi-national NATO battlegroups in Estonia, Latvia, Lithuania, Poland. Suwałki Gap is a 104km land corridor between Kaliningrad and Belarus — NATO's most vulnerable land chokepoint. Permanent reinforcement since 2016 Warsaw Summit. Post-invasion expansion in progress.",
+        "source": "NATO SHAPE / IISS Military Balance 2024",
+        "source_url": "https://www.nato.int",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[22.5, 53.8], [24.5, 53.5], [26.5, 54.0], [28.5, 55.0], [28.0, 57.5], [25.5, 59.5], [23.5, 59.8], [22.0, 58.5], [21.5, 56.5], [21.8, 55.2], [22.5, 53.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ma-pla-taiwan-001",
+        "name": "PLA — Taiwan Strait Operations Zone",
+        "kind": "military_activity",
+        "region": "East Asia",
+        "severity": 5,
+        "note": "PLA Navy and Air Force conduct regular exercises and grey-zone operations in Taiwan Strait. Large-scale military exercises April 2023 ('Joint Sword') and May 2024 ('Joint Sword-2024A') encircling Taiwan. PLA warships and J-20s operating across median line. Live-fire zones declared unilaterally.",
+        "source": "CSIS AMTI / IISS / Taiwan MND",
+        "source_url": "https://amti.csis.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[117.5, 21.5], [120.0, 21.0], [122.5, 22.0], [123.5, 24.5], [123.0, 26.8], [121.0, 27.5], [119.0, 26.5], [117.5, 24.5], [117.0, 22.5], [117.5, 21.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ma-dprk-korea-001",
+        "name": "Korean Peninsula — Military Posture Zone",
+        "kind": "military_activity",
+        "region": "East Asia",
+        "severity": 4,
+        "note": "DPRK artillery corps can range Seoul. North Korean long-range artillery in forward emplacements since 2022 escalation. US-ROK joint exercises 'Freedom Shield' and 'Ulchi Freedom Shield' regularly provoke ICBM test responses. Significant US military footprint (28,500 troops). DPRK troops deployed to support Russia (Oct 2024 confirmed).",
+        "source": "US DOD / CSIS Korea Chair / SIPRI",
+        "source_url": "https://www.defense.gov",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[125.0, 36.5], [128.0, 36.0], [130.5, 37.0], [131.0, 38.5], [130.5, 40.5], [128.5, 42.0], [126.5, 42.0], [125.0, 40.5], [124.5, 38.5], [124.8, 37.0], [125.0, 36.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ma-5thfleet-001",
+        "name": "Persian Gulf — US 5th Fleet / IRGCN Operations",
+        "kind": "military_activity",
+        "region": "Middle East",
+        "severity": 4,
+        "note": "US Naval Forces Central Command (NAVCENT/5th Fleet) based at Manama, Bahrain. IRGCN operates fast-attack craft, submarines, mines and drone swarms. Ongoing gray zone operations: US tanker seizures, vessel harassment, drone interceptions. Strait of Hormuz: 20% of global oil transits. Elevating posture since Oct 2023.",
+        "source": "US NAVCENT / CSIS / IISS",
+        "source_url": "https://www.cusnc.navy.mil",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[48.5, 22.8], [51.0, 22.0], [55.0, 22.5], [58.0, 23.5], [58.5, 25.5], [57.0, 27.0], [55.0, 27.5], [52.0, 27.0], [49.5, 26.0], [48.0, 25.0], [48.5, 22.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ma-us-syria-iraq-001",
+        "name": "Eastern Syria / Iraq — US Forces Zone",
+        "kind": "military_activity",
+        "region": "Middle East",
+        "severity": 3,
+        "note": "US maintains ~900 troops in eastern Syria (Operation Inherent Resolve): al-Tanf garrison (southern Syria), SDF partnership zones, Deir ez-Zor area, Hasakah. 2,500 troops in Iraq. Regular drone and missile strikes on US bases by Iran-backed militias. Reciprocal US precision strikes on militia positions.",
+        "source": "US DOD / CENTCOM / SOFREP",
+        "source_url": "https://www.centcom.mil",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[37.5, 32.5], [40.0, 32.0], [43.0, 33.0], [46.0, 33.5], [46.5, 35.5], [44.5, 37.0], [41.5, 37.5], [38.5, 37.0], [37.0, 35.5], [37.0, 34.0], [37.5, 32.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ma-turkey-syria-001",
+        "name": "Northern Syria — Turkish Military Operations",
+        "kind": "military_activity",
+        "region": "Middle East",
+        "severity": 4,
+        "note": "Turkey operates in Afrin, Operation Euphrates Shield, Operation Olive Branch, Operation Peace Spring zones. Ongoing Turkish airstrikes on Kurdish YPG/PKK positions. 12 Turkish military observation posts. Proxy forces of TFSA under Turkish command. Post-Assad HTS transition does not end Turkish operations.",
+        "source": "Turkish MOD / SOHR / Airwaves",
+        "source_url": "https://www.msb.gov.tr",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[36.0, 36.2], [37.5, 36.0], [39.0, 36.2], [41.0, 36.5], [42.5, 37.0], [42.5, 37.8], [41.0, 38.0], [39.0, 38.0], [37.0, 37.5], [35.5, 37.0], [35.8, 36.5], [36.0, 36.2]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ma-russia-staging-001",
+        "name": "Western Russia — Military Staging Zone",
+        "kind": "military_activity",
+        "region": "Eastern Europe",
+        "severity": 5,
+        "note": "Major Russian ground force staging and logistics hubs supporting Ukraine operations. Includes Voronezh, Kursk, Belgorod, Rostov-on-Don hub areas. Ukrainian cross-border incursion into Kursk Oblast (Aug 2024) demonstrated Russian rear-area vulnerability. Russian replenishment and reinforcement operations ongoing.",
+        "source": "ISW / UK MOD Intelligence Updates / ACLED",
+        "source_url": "https://www.understandingwar.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[34.0, 49.5], [36.5, 49.0], [40.0, 49.5], [41.5, 51.0], [41.0, 53.0], [38.5, 54.0], [35.5, 54.0], [33.5, 52.5], [33.0, 50.8], [34.0, 49.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ma-scs-plan-001",
+        "name": "South China Sea — PLAN Naval Operations",
+        "kind": "military_activity",
+        "region": "East Asia",
+        "severity": 4,
+        "note": "PLA Navy operates carrier strike groups, destroyer patrols and amphibious exercises across the South China Sea. Militarized artificial islands at Fiery Cross, Mischief, Subi Reefs serve as permanent military bases (runways, SAM systems, radar arrays). Coast Guard operations against Philippine resupply missions at Second Thomas Shoal are monthly.",
+        "source": "CSIS AMTI / US 7th Fleet / IISS",
+        "source_url": "https://amti.csis.org",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[110.0, 7.5], [113.0, 6.5], [116.5, 8.5], [118.5, 11.0], [118.0, 14.0], [115.5, 16.0], [113.5, 16.5], [112.0, 14.5], [110.5, 12.0], [110.0, 9.5], [110.0, 7.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ma-sahel-001",
+        "name": "Sahel — Russia Africa Corps Operations",
+        "kind": "military_activity",
+        "region": "Africa",
+        "severity": 3,
+        "note": "Russia's Africa Corps (successor to Wagner Group) deployed in Mali, Niger, Burkina Faso and Libya. French Barkhane operation expelled. US forces expelled from Niger (Apr 2024). Joint counterterrorism operations with junta governments against JNIM and ISGS. Russian advisors embedded with national armies. Documented human rights violations in operational zones.",
+        "source": "ACLED / US Africa Command / Crisis Group",
+        "source_url": "https://acleddata.com",
+        "updated_at": "2025-03-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-5.5, 11.0], [0.0, 10.5], [5.0, 12.0], [9.0, 13.5], [15.0, 15.0], [15.5, 18.0], [10.5, 20.0], [5.0, 19.5], [0.0, 18.0], [-4.0, 16.5], [-6.0, 14.0], [-5.5, 11.0]]]
+      }
+    }
+  ]
+}

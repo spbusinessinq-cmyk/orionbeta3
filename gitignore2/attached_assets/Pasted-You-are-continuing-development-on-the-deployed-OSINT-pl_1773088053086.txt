@@ -1,0 +1,220 @@
+You are continuing development on the deployed OSINT platform RSR O.R.I.O.N.
+
+The backend pipeline is stable and must NOT be changed in this pass.
+
+Do NOT touch:
+- OSINT relevance filter
+- category classifier
+- confidence scoring
+- time filters
+- clustering behavior
+- overlay rendering logic
+- event ingestion pipeline
+- deployment config
+
+This pass is a full UI layout and panel discipline overhaul only.
+
+CURRENT STATE
+
+The map, feed, detail panel, overlays, clustering, and glass HUD system all work.
+
+However, the screen still feels cluttered and crowded because:
+- too many floating panels compete for space
+- bottom panels / legends are awkward and jammed together
+- left-side auxiliary panels overlap visually
+- the overall layout still feels like multiple stacked widgets instead of a disciplined command console
+- the interface needs stronger panel hierarchy and better spatial logic
+
+OBJECTIVE
+
+Refactor the screen layout so it feels like a premium tactical intelligence terminal:
+- cleaner
+- more spacious
+- more modular
+- less cluttered
+- less overlap
+- stronger hierarchy
+- better screen discipline
+
+Do NOT redesign the visual language from scratch.
+Preserve the black glass O.R.I.O.N. aesthetic.
+This is a layout and module refinement pass.
+
+PRIMARY GOAL
+
+Reduce the number of always-visible floating boxes and reorganize secondary information into a cleaner layout system.
+
+LAYOUT RULES
+
+1. The screen should have three clear information tiers:
+
+PRIMARY
+- header / command strip
+- map
+- signal feed
+- event detail panel when selected
+
+SECONDARY
+- stats
+- escalation watch
+- active overlays
+
+REFERENCE
+- topic legend
+- tier legend
+- any helper / key style information
+
+Only PRIMARY elements should dominate the screen at all times.
+
+SECONDARY should be compact and disciplined.
+
+REFERENCE should no longer live as multiple permanent floating boxes.
+
+TASKS
+
+1. Consolidate lower-left reference clutter
+The following elements are currently too stacked / cramped:
+- Active Overlays
+- Tier Classification
+- any remaining lower-left reference blocks
+
+Create a cleaner lower-left module strategy:
+- Keep Active Overlays as its own compact module
+- Move Tier Classification into a collapsible sub-panel or unified Reference module
+- Do not leave multiple overlapping bottom-left floating boxes stacked awkwardly
+
+2. Consolidate lower-right reference clutter
+The Topic Index should not permanently occupy as much space as it does now.
+Refactor Topic Index into either:
+- a smaller compact module
+- or a shared Reference / Key module
+- or a collapsible panel
+Choose the cleanest option for screen discipline
+
+3. Build one unified REFERENCE / SYSTEM KEY module
+Create a single compact module that can contain:
+- tier meanings
+- topic colors
+- any system key / legend information
+
+Requirements:
+- collapsed by default
+- opens on click
+- visually consistent with O.R.I.O.N.
+- does not crowd the map
+- can live bottom-left or bottom-right, wherever is cleaner
+
+4. Refactor left-side stack spacing
+The left side currently has:
+- stats
+- escalation watch
+- active overlays
+- detail toggle rail
+
+These need a cleaner vertical rhythm.
+Do:
+- consistent spacing between modules
+- consistent top offsets
+- cleaner alignment
+- no visual collisions
+- clearer distinction between operational modules and reference modules
+
+5. Refactor right-side stack spacing
+The right side currently has:
+- Intel DB panel
+- signal feed
+- alert rail
+- top-right spread toggle / command chips
+
+Make this area feel more structured:
+- cleaner separation between top-right diagnostics and right-side feed
+- better alignment with the command bar
+- consistent spacing
+- reduce floating-widget feeling
+
+6. Improve panel chrome discipline
+Across all panels:
+- reduce unnecessary borders
+- use cleaner internal separators
+- reduce duplicate accent bars
+- improve title spacing
+- improve panel padding consistency
+- make all modules feel like parts of one system, not individual cards
+
+7. Improve bottom HUD behavior
+The map footer / instruction chip is okay but should feel less like an isolated bubble.
+Refine its integration so it feels like part of the system chrome.
+
+8. Improve event detail panel structure
+Do not redesign content logic.
+But refine panel structure so it feels more like a briefing pane:
+- clearer title hierarchy
+- cleaner metadata spacing
+- cleaner badge placement
+- better separation between source, description, context, and controls
+- less repeated boxed-card feeling
+
+9. Keep command strip intact, but align module logic underneath it
+The new top strip is better.
+Now make the rest of the screen feel like it belongs to that command bar.
+
+10. Introduce stronger module hierarchy
+Modules should visually read as:
+- command
+- diagnostics
+- active overlays
+- signal feed
+- briefing pane
+- reference
+
+Not all panels should have equal visual weight.
+
+VISUAL DIRECTION
+
+Keep:
+- black / graphite base
+- restrained teal system status
+- amber for watch / caution
+- red only for actual threat / critical / ingest / selected danger state
+- white / gray for chrome, labels, separators
+
+Avoid:
+- too many bright borders
+- too many floating islands
+- too many permanent legend boxes
+- too much repeated chip styling
+- card-stack dashboard feel
+
+DESIGN TARGET
+
+The result should feel like:
+- an analyst terminal
+- a command console
+- a deployed system interface
+- premium, cold, modular, readable
+
+NOT:
+- a dashboard poster
+- a collection of widgets
+- a UI with training wheels / permanent legends everywhere
+
+IMPLEMENTATION REQUIREMENTS
+
+- preserve glass HUD style
+- preserve clustering
+- preserve map interactions
+- preserve overlay toggles
+- preserve feed behavior
+- preserve event detail functionality
+- preserve current backend and scoring logic
+
+DELIVERABLE
+
+After changes:
+- restart / validate
+- summarize exactly what layout modules changed
+- explain where the legends / keys were moved
+- explain how the bottom-left and bottom-right clutter was reduced
+- confirm no backend or pipeline systems were touched
+
+The goal is to make O.R.I.O.N. feel like a coherent operating environment, not a collection of separate floating boxes

@@ -1,0 +1,169 @@
+You are continuing development on the deployed OSINT platform RSR O.R.I.O.N.
+
+The backend pipeline is stable and must NOT be changed in this pass.
+
+Do NOT touch:
+- OSINT relevance filter
+- category classifier
+- confidence scoring
+- threat scoring
+- clustering logic
+- overlay rendering logic
+- RSS ingestion
+- map event placement
+- deployment config
+
+This pass is a final UI layout polish + one small intelligence implementation.
+
+--------------------------------
+LAYOUT ADJUSTMENTS
+--------------------------------
+
+1. Move DETAILS and ALERTS side tabs downward
+
+Currently they sit too high and visually interfere with the HUD modules.
+
+Do NOT change their functionality.
+
+Only adjust their vertical position so they sit roughly mid-screen vertically.
+
+They should feel like side-drawer handles rather than header elements.
+
+--------------------------------
+
+2. Move Active Overlays to the top control row
+
+Active Overlays should no longer live in the right rail.
+
+Place it beside the "Showing: All Events" control at the top.
+
+Structure should be:
+
+[ Showing: All Events ]   [ Active Overlays ]
+
+They should share the same horizontal row and spacing system.
+
+Active Overlays should remain collapsible.
+
+--------------------------------
+
+3. Move High Threat Events to the right side
+
+Place High Threat Events on the RIGHT side of the screen.
+
+Position it so it vertically mirrors Escalation Watch.
+
+Meaning:
+
+Left side:
+Escalation Watch
+
+Right side:
+High Threat Events
+
+They should align horizontally across the map.
+
+This creates visual symmetry.
+
+High Threat Events remains collapsible and visible only in Operator mode.
+
+--------------------------------
+
+4. Improve system header spacing
+
+The header currently feels tight.
+
+Improve breathing room between:
+
+RSR / O.R.I.O.N.
+OSINT badge
+view mode tabs
+system status
+ingest command
+
+Do NOT redesign the header.
+
+Just increase spacing and alignment clarity.
+
+--------------------------------
+
+5. Fix Spread panel expansion collision
+
+When the Spread panel expands it overlaps nearby modules.
+
+Fix this by:
+
+• expanding downward only
+• ensuring surrounding panels shift correctly
+• preventing overlap with Active Overlays or Intel DB
+
+--------------------------------
+
+VIEW MODE RULES (must remain)
+
+Operator Mode:
+Full layout visible.
+
+Focus Mode:
+Hide Escalation Watch and High Threat Events.
+
+Briefing Mode:
+Hide all HUD modules except stats and filters.
+
+--------------------------------
+
+NEW SMALL IMPLEMENTATION
+--------------------------------
+
+Add event hover preview.
+
+When hovering over a map cluster or pin:
+
+Show a small floating preview card with:
+
+• event title
+• location
+• source
+• tier classification
+
+This preview should appear near the cursor.
+
+This improves intelligence scanning speed.
+
+Do NOT alter the event detail panel logic.
+
+--------------------------------
+
+VISUAL RULES
+
+Maintain O.R.I.O.N design language:
+
+• black / graphite base
+• teal / green for system activity
+• amber for caution
+• red for active threat
+• glass HUD panels
+• restrained animation
+
+Avoid:
+
+• flashy effects
+• neon glow
+• consumer UI styling
+
+--------------------------------
+
+DELIVERABLE
+
+After changes:
+
+• restart application
+• confirm layout symmetry
+• confirm DETAILS and ALERTS tabs moved
+• confirm Active Overlays moved beside Showing filter
+• confirm High Threat Events mirrors Escalation Watch
+• confirm Spread expansion no longer collides
+• confirm hover preview works
+• confirm backend pipeline untouched
+
+Goal: finalize O.R.I.O.N as a clean operational intelligence console.
